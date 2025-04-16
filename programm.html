@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name='theme-color' content='#F8EB22' />
+    <meta name="msapplication-navbutton-color" content='#F8EB22' />
+    <title>Good Energy Festival - Programm</title>
+    
+    <!--Einbindung von Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    
+      <!-- Link zu eigenem externen Stylesheet -->
+    <link rel="stylesheet" href="stylesprogramm.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">                  
+
+  </head>
+
+  <body>
+  
+    <!-- Navbar-->
+
+    <header class="header">
+      <div class="header__content">
+        <a href="index.html" class="logo-link"><img src="images/Header_logo.png" alt="Logo" height="26px"></a>
+      
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Programm</a>
+            </li>
+            <li class="nav__item">
+              <a href="lineup.html" class="nav__link">Line up</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html/#section_5" class="nav__link">Anfahrt</a>
+            </li>
+            <li class="nav__item">
+              <a href="ueberuns.html" class="nav__link">Über uns</a>
+            </li>
+            <li class="nav__item spin">
+              <a href="https://facebook.de/good-energy-festival"><img src="images/facebook_icon.svg" width="32px" height="32px" alt="Facebook Item"></a>
+            </li>
+            <li class="nav__item spin">
+              <a href="https://www.instagramm.de"><img src="images/instagram_icon.svg" width="32px" height="32px" alt="Instagramm Icon"></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      
+      <!-- Programm Section -->
+
+      
+      <div class="programm-page-title">
+          <div class="stacked">
+            <img src="images/Mitmach_1980px.jpg" class="programm_img">
+            <h2 class="item-overlay">FESTIVAL-PROGRAMM</h2>
+          </div>
+      </div>
+        
+      <section class="section-padding">
+        <h2 class="section-ueberschrift">Workshops</h2>
+      </section>
+    
+
+      
+    </main>
+
+    <footer>
+      <section class="Footer-Container">
+        
+        <div class="Logo-Footer">
+          <img src="images/Header_logo.png" alt="Logo" class="Footer-Logo-Image">
+          <div class="Footer-SocialMedia">
+            <a href="#"><img src="images/facebook_icon.svg" class="Footer-Facebook spin" alt="Facebook-Logo-Link"></a>
+            <a href="#"><img src="images/instagram_icon.svg" class="Footer-Instagram spin" alt="Instagram-Logo-Link"></a>
+          </div>
+      
+        </div>
+        <div class="Links-Footer">
+          <h3>LINKS</h3>
+          <ul>
+            <li class="Links-Footer-Links-ul"><a href="#">ÜBER UNS</a></li>
+            <li class="Links-Footer-Links-ul"><a href="#">IMPRESSUM</a></li>
+            <li class="Links-Footer-Links-ul"><a href="#">DATENSCHUTZ</a></li>
+          </ul>
+        </div>
+
+        <div class="Kontakt-Footer">
+          <h3>KONTAKT</h3>
+          
+            <div class="Kontakt-Footer-Row-1">
+    
+                <div class="Links-Footer-Kontakt-Spalte-1">ADRESSE:</div>
+                <div class="Links-Footer-Kontakt-Spalte-2">Palo-Alto-Platz 11, 69124 Heidelberg</div>
+            </div>  
+
+            <div class="Kontakt-Footer-Row-2">
+    
+              <div class="Links-Footer-Kontakt-Spalte-3">TEL.:</div>
+              <div class="Links-Footer-Kontakt-Spalte-4">06221-3262175</div>
+            </div>
+
+            <div class="Kontakt-Footer-Row-3">
+    
+              <div class="Links-Footer-Kontakt-Spalte-5">E-MAIL:</div>
+              <div class="Links-Footer-Kontakt-Spalte-6"><a href="#">info@good-energy-festival.de</a></div>
+            </div>        
+        </div>
+      </section>
+
+      <section class="copyright">
+        Copyright &copy; Good Energy Festival 2025
+      </section>
+
+    </footer>
+    
+  
+    <!-- JavaScript -->
+       
+    <script>
+
+      const navEl = document.querySelector(".nav");
+      const hamburgerEl = document.querySelector(".hamburger");
+      const navlinkEl = document.querySelector(".nav__link");
+
+      hamburgerEl.addEventListener("click", () => {
+          navEl.classList.toggle("nav--open");
+          hamburgerEl.classList.toggle("hamburger--open");
+      });
+
+      navEl.addEventListener("click", () => {
+          navEl.classList.remove("nav--open");
+          hamburgerEl.classList.toggle("hamburger--open");
+      })
+
+      
+    </script>
+  </body>
+</html>
