@@ -16,7 +16,7 @@
 @media all and (max-width: 2100px) {
     :root {
         font-family: "Rethink Sans", serif;
-        font-size: 28px;
+        font-size: 30px;
     --fs-xxl: 3.157rem;
     --fs-xl: 2.369rem;
     --fs-l: 1.777rem;
@@ -31,7 +31,7 @@
 @media all and (max-width: 2000px) {
     :root {
         font-family: "Rethink Sans", serif;
-        font-size: 24px;
+        font-size: 28px;
     --fs-xxl: 3.157rem;
     --fs-xl: 2.369rem;
     --fs-l: 1.777rem;
@@ -41,6 +41,48 @@
     --fs-xs: 0.8rem;
     }
     }
+
+@media all and (max-width: 1900px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 26px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.333rem;
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+    }
+    }
+
+@media all and (max-width: 1800px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 25px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.333rem;
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+    }
+    }
+
+@media all and (max-width: 1700px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 24px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.333rem;
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+    }
+    }    
 
 @media all and (max-width: 1600px) {
     :root {
@@ -252,7 +294,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     min-height: 80px;
 }
 
@@ -466,12 +511,16 @@ transition: 1.5s;
     display: flex;
     justify-content: center;
     width: 100%; 
+
 }
 
 .logo-top {
     font-family: "Rethink Sans", serif;
     font-size: var(--fs-m);
+    font-weight: 600; 
     color: black; 
+    margin-top: 50px;
+
  }
 
 .logos-img {
@@ -569,7 +618,7 @@ transition: 1.5s;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 0px;
     width: 100%;
  }
 
@@ -610,7 +659,7 @@ transition: 1.5s;
      color: #F8EB22;
      text-shadow: 2px 2px 2px rgb(0,0,0,.2);
      font-family: "Rethink Sans", serif;
-     height: 700px;
+     height: 900px;
      width: 100%;
      object-fit: cover;
 
@@ -636,6 +685,13 @@ transition: 1.5s;
      color: #F8EB22;
      text-align: center;
      z-index: 1;
+ }
+
+.bands-overlay-a {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    color: #F8EB22;
  }
  
  .bands-sectionp {
@@ -671,7 +727,7 @@ video {
 }
 
 .DJ-img {
-    height: 700px;
+    height: 900px;
     width: 100%;
     object-fit: cover;
     max-width: 100%;
@@ -686,74 +742,6 @@ video {
 }
 
 
-/* Alte Statements Section*/
-/*
-.container-Statements {
-   max-width: 100rem;
-   margin-inline: auto;
-   margin-top: 140px;
-}
-
-.stacked__card {
-    display: grid;
-}
-
-.stacked__card > * {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.Statements-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
-}
-
-.card {
-    
-    aspect-ratio: 1 / 1;
-    background: white;
-    border: solid 0.5px gray;
-}
-
-.card__content {
-    background: white;
-    align-self: end;
-    margin: .5rem .5rem 1rem;
-    padding: .5rem;
-    z-index: 1;
-}
-
-.card__img {
-    width: 100%;
-    aspect-ratio: 1 / 1.4;
-    object-fit: cover;
-    filter: grayscale(100%)
-    contrast(145%);
-    transition: filter .3s;
-}
-
-.card__img:hover {
-    filter: none;
-}
-
-.card__title {
-    font-size: var(--fs-l);
-    line-height: 1.5;
-}
-
-.card__subtitle {
-    font-size: var(--fs-m);
-    line-height: 1.5;
-}
-
-.card__description {
-    padding-top: 10px;
-    font-size: var(--fs-normal);
-}
-*/
-
-
 /* Slider Section */
 
 .slider-container {
@@ -761,7 +749,6 @@ video {
     align-items: center;
     justify-content: center;
     background: white;
-    margin-top: 100px;
     max-width: 100%;
 }
 
@@ -771,7 +758,7 @@ video {
 
     display: flex;
     flex-direction: column;
-    background: white;
+    background: #f7f6f6;
     height: auto;
     border: solid 1px black;
 
@@ -829,7 +816,7 @@ video {
  /* Anfahrt Section */
 
 
- .anfahrt-img {
+ .anfahrt {
     width: 100%; 
  }
  
@@ -840,6 +827,7 @@ video {
     font-size: var(--fs-m);
     font-weight: 400;
     padding-top: 10px;
+    margin-bottom: 50px;
 }
 
 .anfahrt__img {
@@ -853,6 +841,84 @@ video {
 .anfahrt__img:hover {
     filter: none;
 }
+
+.Anfahrt-Sub-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F8EB22;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 45px;
+    padding-right: 20px
+}
+
+.Anfahrt-Sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f6f6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f7f6f6;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 120px;
+}
+
+.Bahn {
+    height: 90px;
+}
+
+.Bike {
+    height: 90px;  
+} 
+
+.Anfahrt-Sub-Title {
+    display: flex;
+    align-items: top;
+    justify-content: center; 
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: var(--fs-m);
+    font-weight: 700;
+    background-color: #f7f6f6;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 120px;
+}
+
+.Anfahrt-Sub-Beschreibung {
+    align-items: top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f7f6f6;
+    flex-grow: 1;
+
+}
+
+.Anfahrt-Sub-Beschreibung-p1 {
+    font-size: var(--fs-m);
+}
+
+.Anfahrt-Sub-Beschreibung-p2 {
+    font-size: var(--fs-m);
+}
+
 
 /* Partner Section */
 
@@ -1055,6 +1121,274 @@ video {
     border-top: 1px solid black;
 }
 
+
+/* Styles Programm Page */
+
+.programm-page-title {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 0px;
+ }
+ 
+ .programm-page-stacked {
+    display: grid;
+ }
+ 
+ .programm-page-stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+ } 
+
+ .programm-page_img {
+    background-image: url("images/Mitmach_1980px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: grayscale(100%)
+    contrast(145%);
+    transition: filter .3s;
+    z-index: 0;
+}
+
+.programm-page_img:hover {
+    filter: none;
+}
+
+.programm-page-item-overlay {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-xxl);
+    font-weight: 600; 
+    color: #F8EB22;
+    align-self: start;
+    z-index: 10;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    margin-right: 1rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;  
+ }
+
+
+.Mitmach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-inline: auto;
+ }
+
+.Mitmach__card {
+    display: grid;
+    background: white;
+    border: solid 0.5px gray;
+}
+
+.Mitmach-card__content {
+    background: white;
+    align-self: end;
+    margin: .5rem .5rem 1rem;
+    padding: .5rem;
+    z-index: 1;
+}
+
+.Mitmach__img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    filter: grayscale(100%)
+    contrast(145%);
+    transition: filter .3s;
+}
+
+.Mitmach__img:hover {
+    filter: none;
+}
+
+.Mitmach-card__title {
+    font-size: var(--fs-l);
+    line-height: 1.5;
+}
+
+.Mitmach-card__subtitle {
+    font-size: var(--fs-m);
+    line-height: 1.5;
+}
+
+.Mitmach-card__description {
+    padding-top: 10px;
+    font-size: var(--fs-normal);
+}
+
+.Programm-Vortraege-Row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("images/Fishbowl-neu-bw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+ } 
+
+
+.Programm-Vortraege-img:hover {
+    filter: none;
+}
+ 
+
+/* Styles Line Up Page */
+
+.lineup-page-title {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 0px;
+ }
+ 
+ .lineup-page-stacked {
+    display: grid;
+ }
+ 
+ .lineup-page-stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+ } 
+
+ .lineup-custom-video {
+    width: 100%;
+    height: 700px;
+    display: block;
+    filter: grayscale(100%)
+    contrast(125%);
+    transition: filter .3s;
+}
+
+.lineup-custom-video:hover {
+    filter: none;
+}
+
+.lineup-page-item-overlay {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-xxl);
+    font-weight: 600; 
+    color: #F8EB22;
+    align-self: start;
+    z-index: 10;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    margin-right: 1rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;  
+ }
+
+.lineup-bands-container {
+    display: flex;   
+    max-width: 100%; 
+    background-color: #f7f6f6;  
+    justify-content: flex-start; 
+
+}
+
+.lineup-bands-image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 50%;
+    background-color: #f7f6f6;
+}
+
+.lineup-bands-img {
+    width: 100%;
+    aspect-ratio: 1 / 0.8;
+    object-fit: cover;
+    filter: grayscale(100%)
+    contrast(145%);
+    transition: filter .3s;
+}
+
+.lineup-bands-img:hover {
+    filter: none;
+
+}
+
+.lineup-bands-content {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    background-color: #f7f6f6;
+    padding: 40px;
+    
+}
+
+.lineup-band-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.lineup-band-name {
+    font-size: var(--fs-m);
+    margin-bottom: 20px;
+}
+
+.lineup-band-p {
+    font-size: var(--fs-normal); 
+    margin-bottom: 30px;
+}
+
+.lineup-subcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.lineup-band-web {
+    font-size: var(--fs-normal); 
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.a-lineup-bands {
+    font-size: var(--fs-normal); 
+    margin-bottom: 20px;
+}
+
+.lineup-band-youtube {
+    font-size: var(--fs-normal); 
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.lineup-band-GEF {
+    font-size: var(--fs-normal); 
+}
+
+.section-padding-lineup {
+    background: black;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+a:hover, a:focus .a-lineup-bands  {
+    color: #F8EB22;
+}
+
  /* Media Queries */
 
   @media all and (max-width: 2100px) {
@@ -1075,7 +1409,7 @@ video {
 */
 
 .illu {
-    width: 90%;
+    width: 95%;
     }
 
 .grid-item {
@@ -1091,8 +1425,16 @@ video {
 }
  
 .hero-h2 {
-     margin-bottom: 15px;
-     padding-top: 20px;
+     margin-bottom: 30px;
+     padding-top: 45px;
+}
+
+.Highlights-Row {
+height: 1000px;
+}
+
+.Anfahrt-Sub-Title {
+    flex-basis: 140px;
 }
 
 .Links-Footer-Kontakt-Spalte-4 {
@@ -1107,12 +1449,22 @@ video {
 
 @media all and (max-width: 2000px) {
 
+.container-programm {
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    
+}
+.illu {
+    width: 95%;
+    }
+  
+
 .Links-Footer-Kontakt-Spalte-4 {
-    padding-left: 72px;
+    padding-left: 80px;
  }
 
  .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 38px;
+    padding-left: 40px;
  }
 
 }
@@ -1135,7 +1487,7 @@ video {
 */
 
 .illu {
-    width: 85%;
+    width: 95%;
     }
 
 .grid-item {
@@ -1151,11 +1503,22 @@ video {
 }
  
 .hero-h2 {
-     margin-bottom: 15px;
-     padding-top: 20px;
+     margin-bottom: 30px;
+     padding-top: 45px;
 }
 
  }
+
+ @media all and (max-width: 1900px) {
+
+ .Links-Footer-Kontakt-Spalte-4 {
+    padding-left: 78px;
+ }
+
+ .Links-Footer-Kontakt-Spalte-6 {
+    padding-left: 40px;
+ }
+}
 
  @media all and (max-width: 1850px) {
     .container-hero {
@@ -1167,8 +1530,9 @@ video {
      .grid-item {
         margin-top: 120px;
         }
+
      .illu {
-        width: 90%;
+        width: 95%;
          }
     
      .grid-item-1 {
@@ -1180,12 +1544,26 @@ video {
      }
      
      .hero-h2 {
-         margin-bottom: 15px;
-         padding-top: 20px;
+         margin-bottom: 30px;
+         padding-top: 45px;
      }
+
+     .Highlights-Row {
+        height: 1000px;
+        }
 
     }
 
+    @media all and (max-width: 1800px) {
+
+    .Links-Footer-Kontakt-Spalte-4 {
+        padding-left: 75px;
+     }
+    
+     .Links-Footer-Kontakt-Spalte-6 {
+        padding-left: 40px;
+     }
+    }
 
  @media all and (max-width: 1750px) {
     .container-hero {
@@ -1198,7 +1576,7 @@ video {
         margin-top: 110px;
         }
      .illu {
-        width: 90%;
+        width: 95%;
          }
     
      .grid-item-1 {
@@ -1210,8 +1588,20 @@ video {
      }
      
      .hero-h2 {
-         margin-bottom: 15px;
-         padding-top: 20px;
+         margin-bottom: 30px;
+         padding-top: 45px;
+     }
+
+    }
+
+    @media all and (max-width: 1700px) {
+
+    .Links-Footer-Kontakt-Spalte-4 {
+        padding-left: 73px;
+     }
+    
+     .Links-Footer-Kontakt-Spalte-6 {
+        padding-left: 38px;
      }
 
     }
@@ -1227,7 +1617,7 @@ video {
         margin-top: 90px;
         }
      .illu {
-        width: 85%;
+        width: 95%;
          }
     
      .grid-item-1 {
@@ -1239,8 +1629,8 @@ video {
      }
      
      .hero-h2 {
-         margin-bottom: 15px;
-         padding-top: 20px;
+         margin-bottom: 30px;
+         padding-top: 45px;
      }
      /*
      .grid-item-image {
@@ -1266,7 +1656,7 @@ video {
         margin-top: 80px;
         }
      .illu {
-        width: 85%;
+        width: 95%;
          }
     
      .grid-item-1 {
@@ -1278,9 +1668,33 @@ video {
      }
      
      .hero-h2 {
-         margin-bottom: 15px;
-         padding-top: 20px;
+         margin-bottom: 30px;
+         padding-top: 45px;
      }
+
+     .container-programm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        margin-inline: auto;
+     }
+
+     .Highlights-Row {
+        height: 900px;
+        }
+      
+    .Mitmach-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        margin-inline: auto;
+        }   
+
+     .Anfahrt-Sub-Title {
+        flex-basis: 120px;
+    }
  
      .Links-Footer-Kontakt-Spalte-4 {
         padding-left: 62px;
@@ -1289,6 +1703,7 @@ video {
      .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 34px;
      }
+
  }
 
  @media all and (max-width: 1550px) {
@@ -1377,6 +1792,20 @@ video {
      padding-top: 20px;
  }
 
+ .container-programm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-inline: auto;
+ }
+
+ .Mitmach-grid {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-rows: 1fr 1fr;
+
+ }
+
  footer {
     margin-top: 70px;
  }
@@ -1454,7 +1883,47 @@ video {
         padding-left: 20px;
         padding-right: 20px;
      }
- }
+
+
+    
+ .Bahn {
+        height: 90px; 
+        padding-top: 10px;
+        padding-bottom: 10px;  
+ }   
+
+ .Bus {
+    height: 90px; 
+    padding-top: 10px;
+    padding-bottom: 10px;  
+} 
+
+.Bike {
+    height: 90px; 
+    padding-top: 10px;
+    padding-bottom: 10px;  
+} 
+
+.programm-page_img {
+    background-image: url("images/Mitmach_1300px.png");
+    aspect-ratio: 1 / 2;
+    object-fit: cover;
+    height: 600px;
+}
+
+}   
+
+@media all and (max-width: 1295px){
+
+.lineup-bands-content {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    background-color: #f7f6f6;
+    padding: 30px;
+    
+}
+}
  
  @media all and (max-width: 1200px){
     .container-hero {
@@ -1511,6 +1980,11 @@ video {
         margin-bottom: 30px;
         }
 
+    .Mitmach-grid {
+        grid-template-columns: repeat(auto-fit, minmax(539px, 1fr));
+        grid-template-rows: 1fr 1fr;
+    }
+
         .bands-overlay {
             margin-top: 100px;
             font-size: 2rem;
@@ -1527,6 +2001,17 @@ video {
      .menu-button {
          display: block;
      }
+
+     .Anfahrt-Sub-Title {
+        padding-left: 20px;
+        padding-right: 10px;
+        font-size: var(--fs-m);
+        font-weight: 700;
+        background-color: #f7f6f6;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100px;
+    }
 
      footer {
         margin-top: 70px;
@@ -1546,6 +2031,17 @@ video {
 
  }
 
+ @media all and (max-width: 1160px) {
+
+ .lineup-bands-img {
+    width: 100%;
+    aspect-ratio: 1 / 0.95;
+    object-fit: cover;
+    filter: grayscale(100%)
+    contrast(145%);
+    transition: filter .3s;
+}
+ }
 
  @media all and (max-width: 1130px) {
 
@@ -1633,6 +2129,21 @@ video {
  }
 
 
+ @media all and (max-width: 1078px) {
+ .container-programm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-inline: auto;
+ }
+
+.Mitmach-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 1fr 1fr;
+ }
+}
+
  @media all and (max-width: 1030px) {
  
     .header-grid {
@@ -1661,11 +2172,40 @@ video {
         }
  }
 
+ @media all and (max-width: 1030px) {
+
+    .lineup-bands-img {
+       width: 100%;
+       aspect-ratio: 1 / 1.1;
+       object-fit: cover;
+       filter: grayscale(100%)
+       contrast(145%);
+       transition: filter .3s;
+   }
+    }
+
  @media all and (max-width: 1015px) {
 
     .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 35px;
     }
+
+ }
+
+ @media all and (max-width: 1000px) {
+
+
+.Anfahrt-Sub-Title {
+    font-size: 1.25;
+}
+
+ .Anfahrt-Sub-Beschreibung-p1 {
+    font-size: 1.15rem;
+}
+
+.Anfahrt-Sub-Beschreibung-p2 {
+    font-size: 1.15rem;
+}
 
  }
 
@@ -1706,9 +2246,61 @@ video {
  }
 
 
+ @media all and (max-width: 920px) {
+
+ .lineup-bands-container {
+    display: flex;  
+    flex-direction: column; 
+    max-width: 100%; 
+    background-color: blue;  
+    justify-content: flex-start; 
+
+}
+
+.lineup-bands-image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+    background-color: brown;
+}
+
+.lineup-bands-img {
+    aspect-ratio: 2.3 / 1;
+    object-fit: cover;
+}
+
+.lineup-bands-content {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    background-color: #f7f6f6;
+    padding: 40px;
+    
+}
+
+.lineup-band-header {
+    max-width: 50%;
+    padding-right: 10px;
+}
+
+.lineup-subcontent {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding-top: 46px;
+    padding-left: 40px;
+
+}
+
+ }
 
 @media all and (max-width: 900px) {
 
+    .header__content {
+        padding-right: 20px;
+    }
+   
     .header-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1769,6 +2361,18 @@ video {
 
     }
 
+    .Anfahrt-Sub-Title {
+        font-size: 1.15rem;
+    }
+    
+     .Anfahrt-Sub-Beschreibung-p1 {
+        font-size: 1.rem;
+    }
+    
+    .Anfahrt-Sub-Beschreibung-p2 {
+        font-size: 1.rem;
+    }
+
     .Footer-Container {
         flex-direction: column; 
        }
@@ -1794,6 +2398,17 @@ video {
    
     }
 
+    @media all and (max-width: 897px) {
+
+        .lineup-subcontent {
+            display: flex;
+            flex-direction: column;
+            max-width: 50%;
+            padding-top: 51px;
+            padding-left: 40px;
+        }
+        }
+
 
 @media all and (max-width: 830px) {
     /* Neu hinzugefügt 20.3.*/
@@ -1814,6 +2429,25 @@ video {
     
     .Adresse{
         padding-left: 20px;
+    }
+
+    .Anfahrt-Sub-Container {
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+
+    .Anfahrt-Sub-Title {
+        font-size: 1.15;
+    }
+
+
+    .Anfahrt-Sub-Beschreibung-p1 {
+        font-size: var(--fs-normal);
+    }
+    
+    .Anfahrt-Sub-Beschreibung-p2 {
+        font-size: var(--fs-normal);
     }
 
     .Footer-Container {
@@ -1847,6 +2481,17 @@ video {
 
 }
 
+@media all and (max-width: 785px) {
+
+    .lineup-subcontent {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        padding-top: 47px;
+        padding-left: 40px;
+    }
+    }
+
 @media all and (max-width: 765px) {
 
     .grid-item-image {
@@ -1862,6 +2507,42 @@ video {
         margin-left: 20px;
     }
 }
+
+@media all and (max-width: 750px) {
+   
+   .lineup-bands-img {
+       aspect-ratio: 1 / 0.9;
+       object-fit: cover;
+   }
+   
+   .lineup-bands-content {
+       display: flex;
+       max-width: 100%;
+       flex-direction: column;
+       background-color: #f7f6f6;
+       padding: 20px;
+   }
+   
+   .lineup-band-header {
+       max-width: 100%;
+       padding: 0px;
+   }
+   
+   .lineup-subcontent {
+       display: flex;
+       flex-direction: column;
+       max-width: 100%;
+       padding-top: 0px;
+       padding-left: 0px;
+   }
+   
+   .section-padding-lineup {
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+    }
 
 
  @media all and (max-width: 716px) {
@@ -1956,6 +2637,16 @@ video {
 
 }
 
+@media all and (max-width: 600px) {
+
+.programm-page-item-overlay {
+    font-size: var(--fs-xl);
+    margin-left: 50%;
+    margin-right: 100px;
+ }
+
+}
+
 @media all and (max-width: 578px) {
 
 .Links-Footer-Kontakt-Spalte-4 {
@@ -2024,6 +2715,29 @@ video {
         font-size: 1.2rem;
     }
 
+    .Mitmach-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: 1fr 1fr; 
+    }
+
+
+}
+
+@media all and (max-width: 530px) {
+
+.Anfahrt-Sub {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Anfahrt-Sub-Title {
+    flex-basis: 30px;
+}
+}
+
+.anfahrt__img {
+    height: 60vh;
 }
 
 @media all and (max-width: 520px) {
@@ -2045,9 +2759,23 @@ video {
      .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 31px;
      }
+
+    .programm-page-item-overlay {
+        font-family: "Rethink Sans", serif;
+        font-size: 2rem;
+        font-weight: 600; 
+        color: #F8EB22;
+        align-self: start;
+        z-index: 10;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        margin-left: 45%;
+        margin-right: 100px;
+        text-align: center;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;  
+     }
     }
-
-
 
 @media all and (max-width: 495px) {
 
@@ -2145,6 +2873,19 @@ video {
         padding-bottom: 5px;
 
     } 
+
+    .programm-page-item-overlay {
+
+        font-size: 1.8rem;
+
+
+        z-index: 10;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        margin-left: 42%;
+        margin-right: 63px;
+ 
+     }
 }
 
 @media all and (max-width: 385px) {
@@ -2152,6 +2893,19 @@ video {
 .Links-Footer-Kontakt-Spalte-6 {
     padding-left: 34px;
 }
+
+}
+
+
+@media all and (max-width: 378px) {
+
+.Links-Footer-Kontakt-Spalte-4 {
+    padding-left: 57px;
+ }
+
+ .Links-Footer-Kontakt-Spalte-6 {
+    padding-left: 36px;
+ }
 
 }
 
@@ -2180,13 +2934,23 @@ video {
     padding-left: 80px;
 }
 
+.Links-Footer-Kontakt-Spalte-4 {
+    padding-left: 58px;
+ }
 .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 37px;
+    padding-left: 38px;
 }
 }
 
+@media all and (max-width: 355px) {
 
-
+    .Links-Footer-Kontakt-Spalte-4 {
+        padding-left: 57px;
+     }
+    .Links-Footer-Kontakt-Spalte-6 {
+        padding-left: 39px;
+    }
+}
 
 
 
