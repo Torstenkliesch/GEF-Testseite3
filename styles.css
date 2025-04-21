@@ -1385,10 +1385,108 @@ video {
     padding-bottom: 0px;
 }
 
+
+/* Styles Datenschutz Seite */
+
+.Datenschutz {
+    margin-top: 80px;
+    margin-left: 45px;
+    margin-right: 40px;
+    }
+    
+    .Datenschutz-H1 {
+        font-size: var(--fs-l);
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .Datenschutz-H2 {
+        font-size: var(--fs-m);
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .Datenschutz-p {
+        font-size: var(--fs-normal);  
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .Datenschutz-p1 {
+        margin-bottom: 40px;
+    
+    }
+    
+    .Datenschutz-span {
+        background-color: black;
+        color: #F8EB22;
+        font-style: bold;
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: var(--fs-m);
+    }
+    
+    .span-ueberschrift {
+        font-weight: 700;
+    }
+    
+    .bulleted {
+        list-style: circle;
+        padding-left: 30px;
+    }
+
+
+
+/* Styles Impressum Seite */
+
+.Impressum {
+    margin-top: 80px;
+    margin-left: 45px;
+    margin-right: 25px;
+    }
+    
+    .Impressum-H1 {
+        font-size: var(--fs-l);
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .Impressum-H2 {
+        font-size: var(--fs-m);
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .Impressum-p {
+        font-size: var(--fs-normal);  
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .Impressum-p1 {
+        margin-bottom: 40px;
+    
+    }
+    
+    .Impressum-span {
+        background-color: black;
+        color: #F8EB22;
+        font-style: bold;
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: var(--fs-m);
+    }
+    
+    .span-ueberschrift {
+        font-weight: 700;
+    }
+    
+
+/*
 a:hover, a:focus .a-lineup-bands  {
     color: #F8EB22;
 }
-
+*/
  /* Media Queries */
 
   @media all and (max-width: 2100px) {
@@ -2466,7 +2564,24 @@ height: 1000px;
      .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 31px;
      }
+
+     .Datenschutz {
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 25px;
+        }
+    
+    .Datenschutz-H1 {
+        font-size: var(--fs-m);
+    }
+
+    .Impressum {
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 25px;
+        }
 }
+
 
 
 @media all and (max-width: 800px) {
