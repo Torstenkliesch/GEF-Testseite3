@@ -254,6 +254,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    word-break: break-word;
 }
 
 a:hover,
@@ -850,7 +851,7 @@ video {
     margin-bottom: 10px;
     margin-top: 10px;
     padding-left: 45px;
-    padding-right: 20px
+    padding-right: 40px
 }
 
 .Anfahrt-Sub {
@@ -2457,6 +2458,10 @@ height: 1000px;
         font-style: bold; 
         padding-bottom: 5px;
 
+    }
+
+    .Anfahrt-Sub-Container {
+        padding-right: 20px
     }
 
     .Anfahrt-Sub-Title {
