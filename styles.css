@@ -3677,7 +3677,7 @@ height: 1100px;
         }
     
         #myImage{
-            content: url(http://127.0.0.1:3000/images/Der-Lorax-800px.jpg) !important;
+            content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800px.jpg) !important;
         }
 
         .container-film {
@@ -4146,7 +4146,7 @@ height: 1100px;
 
 
         #myImage{
-            content: url(http://127.0.0.1:3000/images/Der-Lorax-800spx.jpg) !important;
+            content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800spx.jpg) !important;
         }
         .film-poster {
             display: grid;
