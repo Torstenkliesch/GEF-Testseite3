@@ -31,7 +31,7 @@
 @media all and (max-width: 2000px) {
     :root {
         font-family: "Rethink Sans", serif;
-        font-size: 28px;
+        font-size: 29px;
     --fs-xxl: 3.157rem;
     --fs-xl: 2.369rem;
     --fs-l: 1.777rem;
@@ -45,7 +45,21 @@
 @media all and (max-width: 1900px) {
     :root {
         font-family: "Rethink Sans", serif;
-        font-size: 26px;
+        font-size: 28px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.333rem;
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+    }
+    }
+
+@media all and (max-width: 1850px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 28px;
     --fs-xxl: 3.157rem;
     --fs-xl: 2.369rem;
     --fs-l: 1.777rem;
@@ -87,7 +101,7 @@
 @media all and (max-width: 1600px) {
     :root {
         font-family: "Rethink Sans", serif;
-        font-size: 20px;
+        font-size: 23px;
     --fs-xxl: 3.157rem;
     --fs-xl: 2.369rem;
     --fs-l: 1.777rem;
@@ -95,6 +109,20 @@
     --fs-normal: 1rem;
     --fs-s: 0.9rem;
     --fs-xs: 0.8rem;    
+    }
+    }
+
+@media all and (max-width: 1435px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 18px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.300rem;   
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
     }
     }
 
@@ -126,6 +154,36 @@
         }
         }
 
+    @media all and (max-width: 1130px) {
+        :root {
+            font-family: "Rethink Sans", serif;
+            font-size: 17px;
+        --fs-xxl: 3.157rem;
+        --fs-xl: 2.369rem;
+        --fs-l: 1.777rem;
+        --fs-m: 1.333rem;
+        --fs-normal: 1rem;
+        --fs-s: 0.9rem;
+        --fs-xs: 0.8rem;
+        }
+        }
+
+
+    @media all and (max-width: 1080px) {
+        :root {
+            font-family: "Rethink Sans", serif;
+            font-size: 16px;
+        --fs-xxl: 3.157rem;
+        --fs-xl: 2.369rem;
+        --fs-l: 1.777rem;
+        --fs-m: 1.300rem;
+        --fs-normal: 1rem;
+        --fs-s: 0.9rem;
+        --fs-xs: 0.8rem;
+        }
+        }
+
+
     @media all and (max-width: 1000px) {
         :root {
             font-family: "Rethink Sans", serif;
@@ -139,6 +197,21 @@
         --fs-xs: 0.8rem;
         }
         }
+
+
+    @media all and (max-width: 950px) {
+        :root {
+            font-family: "Rethink Sans", serif;
+            font-size: 15px;
+        --fs-xxl: 3.157rem;
+        --fs-xl: 2.369rem;
+        --fs-l: 1.777rem;
+        --fs-m: 1.333rem;
+        --fs-normal: 1rem;
+        --fs-s: 0.9rem;
+        --fs-xs: 0.8rem;
+        }
+        }    
 
     @media all and (max-width: 900px) {
         :root {
@@ -240,6 +313,20 @@
             }
 
 
+        @media all and (max-width: 408px) {
+            :root {
+                font-family: "Rethink Sans", serif;
+                font-size: 17px;
+            --fs-xxl: 3.157rem;
+            --fs-xl: 2.369rem;
+            --fs-l: 1.777rem;
+            --fs-m: 1.333rem;
+            --fs-normal: 1rem;
+            --fs-s: 0.9rem;
+            --fs-xs: 0.8rem;
+            --fs-xxs: 0.65rem;
+            }
+            }
 
 * {
     margin: 0;
@@ -260,6 +347,7 @@ a {
 a:hover,
 a:focus {
     color: white;
+    transition: all 0.4s;
 }
 
 img {
@@ -386,7 +474,6 @@ transition: 1.5s;
     font-weight: 600; 
     color: #F8EB22;
     margin-bottom: 45px;
-
     text-align: center;
     text-transform: uppercase; 
 }
@@ -395,6 +482,7 @@ transition: 1.5s;
     background-color: black;
     padding-left: 10px;
     padding-right: 10px;
+
 }
  
  /* Festival Section */
@@ -477,7 +565,6 @@ transition: 1.5s;
      font-size: var(--fs-m);
      font-style: bold; 
      color: black; 
-     padding-right: 1rem;
      margin-bottom: 20px;
      padding-bottom: 5px;
      text-transform: uppercase; 
@@ -498,40 +585,120 @@ transition: 1.5s;
     font-size: var(--fs-normal);
     font-weight: 600; 
     color: black; 
-    padding-right: 1rem;
     padding-top: 10px;
 }
 
  /* Veranstalterlogos */
  
- .LogoSection-top {
-    background-color: #F8EB22; 
+.container-veranstalter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr auto;
+    max-width: 80%;
+    margin-inline: auto;
+    column-gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
  }
 
- .container-Logos {
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-
+.white-veranstalter {
+    background-color: white;
 }
 
-.logo-top {
-    font-family: "Rethink Sans", serif;
-    font-size: var(--fs-m);
-    font-weight: 600; 
-    color: black; 
-    margin-top: 50px;
+.veranstalter__logo__1 {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-column: span 1;
+    object-fit: cover;
+}
+ 
+.veranstalter__img__1 {
+    object-fit: cover;
+    justify-content: center;
+    height: 80px;
+    filter: grayscale(100%)
+    contrast(110%);
+    transition: filter .3s;
+}
 
- }
+.veranstalter__img__1:hover {
+    filter: none;
+}
 
-.logos-img {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+
+
+.veranstalter__logo__2 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-column: span 1;
+    object-fit: cover;
+}
+ 
+.veranstalter__img__2 {
+
+    object-fit: cover;
+    justify-content: center;
+    height: 80px;
+    filter: grayscale(100%)
+    contrast(110%);
+    transition: filter .3s;
+}
+
+.veranstalter__img__2:hover {
+    filter: none;
+}
+
+.veranstalter__logo__3 {
+    display: grid;
+    object-fit: cover;
+    align-content: center;
+    justify-content: center;
+}
+ 
+.veranstalter__img__3 {
+    object-fit: cover;
+    justify-content: center;
+    height: 80px;
+    filter: grayscale(100%)
+    contrast(110%);
+    transition: filter .3s;
+}
+
+.veranstalter__img__3:hover {
+    filter: none;
+}
+
+.veranstalter__logo__4 {
+    display: grid;
+    object-fit: cover;
+    align-content: center;
+    justify-content: center;
+}
+ 
+.veranstalter__img__4 {
+    object-fit: cover;
+    justify-content: center;
+    height: 80px;
+    filter: grayscale(100%)
+    contrast(110%);
+    transition: filter .3s;
+}
+
+.veranstalter__img__4:hover {
+    filter: none;
 }
 
  
  /* Programm Section */
+
+ .section-padding-programm {
+    background: #F8EB22;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
  
  .container-programm {
     display: grid;
@@ -569,8 +736,10 @@ transition: 1.5s;
  }
 
  .programm_img {
+    /*aspect-ratio: 2 / 1;
+    object-fit: cover;  beide Zeilen nicht unbedingt benötigt*/
     filter: grayscale(100%)
-    contrast(145%);
+    contrast(115%);
     transition: filter .3s;
     z-index: 0;
 }
@@ -641,14 +810,22 @@ transition: 1.5s;
 
 .highlight-paragraph {
     color: #F8EB22;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: var(--fs-m);
+    text-align: center;
 }
 
  .Highlights-Title {
     padding-top: 110px;
     padding-bottom: 10px;
  }
+
+ .link-highlights-a {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-m);
+    color: #F8EB22;
+ }
+
 
  /* Bands Section */ 
  
@@ -761,7 +938,7 @@ video {
     flex-direction: column;
     background: #f7f6f6;
     height: auto;
-    border: solid 1px black;
+    border: solid 1px gray;
 
 }
 
@@ -772,13 +949,13 @@ video {
 
 .slider-card .slider-card-image .slider-img {
     width: 100%;
+    height: 400px;
     object-fit: cover;
 }
 
-
 .slider-img {
     filter: grayscale(100%)
-    contrast(145%);
+    contrast(115%);
     transition: filter .3s;
 }
 
@@ -925,13 +1102,14 @@ video {
 
 .container-partner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr auto;
     max-width: 80%;
     margin-inline: auto;
     gap: 30px;
     padding-top: 55px;
     padding-bottom: 20px;
+    justify-content: center;
 
  }
 
@@ -940,7 +1118,8 @@ video {
 }
 .partner__logo__1 {
     display: grid;
-    align-content: center;
+    justify-self: center;
+    align-self: center;
     grid-column: span 1;
     width: 70%;
     /*
@@ -950,14 +1129,13 @@ video {
 }
  
 .partner__img__1 {
-
     object-fit: cover;
 }
 
 .partner__logo__2 {
     display: grid;
-    justify-content: center;
-    align-content: center;
+    justify-self: center;
+    align-self: center;
     grid-column: span 1;
     width: 70%;
     /*
@@ -967,7 +1145,6 @@ video {
 }
  
 .partner__img__2 {
-
     object-fit: cover;
    }
 
@@ -978,15 +1155,29 @@ video {
     grid-column-end: 4;
     */
     width: 70%;
-    align-content: center;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
 }
  
 .partner__img__3 {
- 
     object-fit: cover;
-    justify-content: center;
    }
+
+.partner__logo__4 {
+    display: grid;
+    /*
+    grid-column-start: 3;
+    grid-column-end: 4;
+    */
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+ 
+.partner__img__4 {
+    object-fit: cover;
+}
+
 
  /* Footer */
 
@@ -1125,6 +1316,20 @@ video {
 
 /* Styles Programm Page */
 
+.a-program-links {
+    word-break:keep-all;
+}
+
+a.a-program-links:visited {
+    color:black;
+}
+
+a.a-program-links:hover {
+    color:#F8EB22;
+}
+
+
+
 .programm-page-title {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1144,16 +1349,16 @@ video {
  } 
 
  .programm-page_img {
-    background-image: url("images/Mitmach_1980px.jpg");
+    background-image: url("images/Programm-Header_neu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     object-fit: cover;
     filter: grayscale(100%)
-    contrast(145%);
+    contrast(115%);
     transition: filter .3s;
     z-index: 0;
 }
@@ -1178,27 +1383,220 @@ video {
     padding-bottom: 0.4rem;  
  }
 
+/* Programm Zeitplan */
 
-.Mitmach-grid {
+.Programm-Zeitplan-Row {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/Schedule-background-bw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1800px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    position: relative;
+    isolation: isolate;
+}
+
+ .Programm-Zeitplan-Row::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #f7f6f6;
+    opacity: 0.15;
+
+}
+
+
+.section-ueberschrift-z {
+   font-family: "Rethink Sans", serif;
+   font-size: var(--fs-l);
+   font-weight: 600; 
+   color: #F8EB22;
+   margin-bottom: 90px;
+   text-align: center;
+   text-transform: uppercase; 
+}
+
+.zeitplanp {
+    font-size: var(--fs-m);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.zeitplanp1 {
+    font-size: var(--fs-normal);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+
+/* Programm Slider Section */
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    max-width: 100%;
+}
+
+.slider-wrapper .slider-card-programm {
+
+    display: flex;
+    flex-direction: column;
+    background: #f7f6f6;
+    height: auto;
+    border: solid 1px gray;
+}
+
+.slider-card-programm .slider-card-programm-image {
+    position: relative;
+}
+
+.slider-card-programm .slider-card-programm-image .slider-programm-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slider-programm-img {
+    filter: grayscale(100%)
+    contrast(115%);
+    transition: filter .3s;
+}
+
+.slider-programm-img:hover {
+    filter: none;
+}
+
+.swiper-button-next {
+    color: #F8EB22;
+}
+
+.slider-card-programm .slider-card-programm-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 20px;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-titlep {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: var(--fs-l);
+    line-height: 1.5;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-subtitlep {
+    margin-bottom: 55px;
+    font-size: var(--fs-m);
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-textp {
+    margin-bottom: 25px;
+    font-size: var(--fs-normal);
+    line-height: 1.5;
+}
+
+
+ .Workshop__logo {
+    width: 30%;
+    object-fit: cover;
+    padding-top: 50px;
+
+}
+
+.slider-card-programm__OrtundZeit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+    font-size: var(--fs-normal);
+}
+
+.slider-card-programm__Zeit {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fs-normal);
+    margin-top: 25px;
+}
+
+.slider-card-programm__Zeit_1 {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    font-weight: 600;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+.slider-card-programm__Zeit_2 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+.slider-card-programm__Ort {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fs-normal);
+}
+
+.slider-card-programm__Ort_1 {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    font-weight: 600;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+.slider-card-programm__Ort_2 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+
+/* Programm - Mitmach-Stationen */
+
+.Mitmach-grid-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: auto;
+    align-items: start;
     width: 100%;
+    background-color: #f7f6f6;
+    align-content: start;
     margin-inline: auto;
- }
+}
 
 .Mitmach__card {
     display: grid;
-    background: white;
+    background: #f7f6f6;
     border: solid 0.5px gray;
+    background-color: #f7f6f6;
 }
 
 .Mitmach-card__content {
-    background: white;
-    align-self: end;
+    display: grid;
+    height: 700px;
     margin: .5rem .5rem 1rem;
     padding: .5rem;
     z-index: 1;
+    background-color: #f7f6f6;
 }
 
 .Mitmach__img {
@@ -1206,7 +1604,7 @@ video {
     aspect-ratio: 2 / 1;
     object-fit: cover;
     filter: grayscale(100%)
-    contrast(145%);
+    contrast(125%);
     transition: filter .3s;
 }
 
@@ -1214,18 +1612,100 @@ video {
     filter: none;
 }
 
+.Mitmach__logo {
+    width: 20%;
+    object-fit: cover;
+    padding-top: 30px;
+}
+
 .Mitmach-card__title {
+    display: grid;
     font-size: var(--fs-l);
-    line-height: 1.5;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .Mitmach-card__subtitle {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.Mitmach-card__subtitle_1 {
+    display: flex;
+    width: 25%;
     font-size: var(--fs-m);
-    line-height: 1.5;
+    line-height: 1.2;
+    justify-content: flex-start;
+}
+
+.Mitmach-card__subtitle_2 {
+    display: flex;
+    width: 75%;
+    font-size: var(--fs-m);
+    line-height: 1.2;
+    justify-content: flex-start;
 }
 
 .Mitmach-card__description {
+    display: grid;
     padding-top: 10px;
+    font-size: var(--fs-normal);
+    
+}
+
+.Mitmach-card__OrtundZeit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+    font-size: var(--fs-normal);
+}
+
+.Mitmach-card__Zeit {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fs-normal);
+}
+
+.Mitmach-card__Zeit_1 {
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    font-weight: 600;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+.Mitmach-card__Zeit_2 {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+.Mitmach-card__Ort {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fs-normal);
+}
+
+.Mitmach-card__Ort_1 {
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    font-weight: 600;
+    justify-content: flex-start;
+    font-size: var(--fs-normal);
+}
+
+.Mitmach-card__Ort_2 {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    justify-content: flex-start;
     font-size: var(--fs-normal);
 }
 
@@ -1235,7 +1715,7 @@ video {
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 900px;
+    height: 700px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url("images/Fishbowl-neu-bw.png");
@@ -1245,11 +1725,155 @@ video {
     background-position: top;
  } 
 
+ .Programm-Familienprogramm-Row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("images/Familienprogramm-background-bw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
 
-.Programm-Vortraege-img:hover {
+
+.container-film {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background: white;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-inline: auto;
+    justify-content: start;   
+}
+
+.film-bg {
+    display: grid;
+    background-image: url("images/Lorax-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;
+    isolation: isolate;
+    grid-row: 1 / 6;
+    grid-column: 1 / 5;
+    filter: grayscale(100%)
+    contrast(125%);
+    transition: filter .3s;
+}
+
+.film-bg:hover {
     filter: none;
 }
- 
+
+.film-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #f7f6f6;
+    opacity: 0.75;
+}
+
+.film-poster {
+    display: grid;
+    grid-row: 1 / 5;
+    grid-column: 1 / 3;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 40px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.film-poster-img {
+    max-width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%)
+    contrast(125%);
+    transition: filter .3s;
+}
+
+.film-poster-img:hover {
+    filter: none;
+}
+
+.film-header {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 3 / 5; 
+    padding-top: 50px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.film-title {
+    display: grid;
+    font-size: var(--fs-l);
+    margin-bottom: 20px;
+}
+
+
+.film-subtitle {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.film-subtitle-h2 {
+    font-size: var(--fs-normal);
+    margin-right: 30px;
+}
+
+
+.film-details {
+    font-size: var(--fs-normal);
+    margin-bottom: 40px;
+
+}
+
+
+.film-beschreibung {
+    display: grid;
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.film-beschreibung-h2 {
+    font-size: var(--fs-m);
+    margin-bottom: 20px;
+}
+
+
+.film-beschreibung-p {
+    font-size: var(--fs-normal);
+    margin-bottom: 45px;
+}
+
+.film-a {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-m);
+    margin-bottom: 20px; 
+}
+
+.film-a:visited {
+    color:black; 
+}
+
+.film-a:hover {
+    color:#F8EB22
+}
 
 /* Styles Line Up Page */
 
@@ -1273,7 +1897,7 @@ video {
 
  .lineup-custom-video {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     display: block;
     filter: grayscale(100%)
     contrast(125%);
@@ -1305,7 +1929,6 @@ video {
     max-width: 100%; 
     background-color: #f7f6f6;  
     justify-content: flex-start; 
-
 }
 
 .lineup-bands-image {
@@ -1327,7 +1950,6 @@ video {
 
 .lineup-bands-img:hover {
     filter: none;
-
 }
 
 .lineup-bands-content {
@@ -1336,7 +1958,6 @@ video {
     flex-direction: column;
     background-color: #f7f6f6;
     padding: 40px;
-    
 }
 
 .lineup-band-header {
@@ -1370,6 +1991,14 @@ video {
     margin-bottom: 20px;
 }
 
+a.a-lineup-bands:visited {
+    color:black;
+}
+
+a.a-lineup-bands:hover {
+    color:#F8EB22;
+}
+
 .lineup-band-youtube {
     font-size: var(--fs-normal); 
     font-weight: 700;
@@ -1378,12 +2007,6 @@ video {
 
 .lineup-band-GEF {
     font-size: var(--fs-normal); 
-}
-
-.section-padding-lineup {
-    background: black;
-    padding-top: 100px;
-    padding-bottom: 0px;
 }
 
 
@@ -1483,6 +2106,93 @@ video {
     }
     
 
+/* Styles Über Uns Seite */
+
+.ueberuns {
+    margin-top: 80px;
+    margin-left: 45px;
+    margin-right: 40px;
+    }
+    
+    .ueberuns-H1 {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: var(--fs-l);
+    }
+    
+    .ueberuns-H2 {
+        font-size: var(--fs-m);
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    
+    .ueberuns-H2-end {
+        font-size: var(--fs-m);
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .container-logo-text-ueberuns {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .uber-uns-logo-container {
+        display: flex;
+        width: 20%;
+    }
+
+    .logo-ueberuns {
+        width: 100%;
+        align-self: start;
+        object-fit: contain;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logo-text-ueberuns-p {
+        display: flex;
+        font-size: var(--fs-normal);  
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 80%;
+        padding-left: 40px;
+        align-self: flex-start;
+    }
+
+    .ueberuns-p {
+        font-size: var(--fs-normal);  
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .ueberuns-p1 {
+        margin-bottom: 40px;
+    
+    }
+    
+    .ueberuns-span {
+        background-color: black;
+        color: #F8EB22;
+        font-style: bold;
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: var(--fs-l);
+    }
+    
+    .span-ueberschrift {
+        font-weight: 700;
+    }
+    
+
+
 /*
 a:hover, a:focus .a-lineup-bands  {
     color: #F8EB22;
@@ -1508,19 +2218,19 @@ a:hover, a:focus .a-lineup-bands  {
 */
 
 .illu {
-    width: 95%;
+    width: 93%;
     }
 
 .grid-item {
-    margin-top: 140px;   
+    margin-top: 160px;   
     }
 
 .grid-item-1 {
-    margin-top: 140px;   
+    margin-top: 160px;   
 }
  
 .grid-item-2 {
-     margin-top: 280px;
+     margin-top: 320px;
 }
  
 .hero-h2 {
@@ -1529,7 +2239,7 @@ a:hover, a:focus .a-lineup-bands  {
 }
 
 .Highlights-Row {
-height: 1000px;
+height: 1100px;
 }
 
 .Anfahrt-Sub-Title {
@@ -1537,12 +2247,24 @@ height: 1000px;
 }
 
 .Links-Footer-Kontakt-Spalte-4 {
-    padding-left: 83px;
+    padding-left: 86px;
 }
 
  .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 41px;
+    padding-left: 42px;
 }
+
+}
+
+@media all and (max-width: 2100px) {
+
+    .illu {
+        width: 95%;
+        }
+
+    .Programm-Zeitplan-Row {
+        height: 2000px;
+    }
 
 }
 
@@ -1559,12 +2281,36 @@ height: 1000px;
   
 
 .Links-Footer-Kontakt-Spalte-4 {
-    padding-left: 80px;
+    padding-left: 82px;
  }
 
  .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 40px;
+    padding-left: 42px;
  }
+
+ .slider-card-programm .slider-card-programm-content .slider-card-programm-titlep {
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-subtitlep {
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-textp {
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.slider-card-programm__OrtundZeit {
+    padding-top: 0px;
+}
+
+.Workshop__logo {
+    width: 30%;
+    padding-top: 40px;
+}
 
 }
 
@@ -1574,16 +2320,6 @@ height: 1000px;
          margin-bottom: 40px;
          margin-left: 40px;
      }
-    /* 
-     .grid-item-image {
-        grid-row-start: 1; 
-        grid-row-end: 3; 
-        grid-column-start: 2;
-        grid-column-end: 2;
-        max-inline-size: 85%;
-        padding-left: 50px;
-     }
-*/
 
 .illu {
     width: 95%;
@@ -1606,17 +2342,55 @@ height: 1000px;
      padding-top: 45px;
 }
 
+.slider-card-programm .slider-card-programm-image .slider-programm-img {
+    height: 450px;
+
+}
+
  }
 
  @media all and (max-width: 1900px) {
 
  .Links-Footer-Kontakt-Spalte-4 {
-    padding-left: 78px;
+    padding-left: 80px;
  }
 
  .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 40px;
+    padding-left: 42px;
  }
+
+ .slider-card-programm .slider-card-programm-content .slider-card-programm-titlep {
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-subtitlep {
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-textp {
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.slider-card-programm__OrtundZeit {
+    padding-top: 0px;
+}
+
+.Workshop__logo {
+    width: 30%;
+    padding-top: 40px;
+}
+
+.Mitmach-card__content {
+    height: 630px;
+}
+
+.Programm-Zeitplan-Row {
+    height: 1800px;
+}
+
 }
 
  @media all and (max-width: 1850px) {
@@ -1627,7 +2401,7 @@ height: 1000px;
      }
 
      .grid-item {
-        margin-top: 120px;
+        margin-top: 130px;
         }
 
      .illu {
@@ -1635,11 +2409,11 @@ height: 1000px;
          }
     
      .grid-item-1 {
-        margin-top: 120px;   
+        margin-top: 130px;   
     }
      
      .grid-item-2 {
-         margin-top: 240px;
+         margin-top: 250px;
      }
      
      .hero-h2 {
@@ -1648,7 +2422,7 @@ height: 1000px;
      }
 
      .Highlights-Row {
-        height: 1000px;
+        height: 1100px;
         }
 
     }
@@ -1662,6 +2436,11 @@ height: 1000px;
      .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 40px;
      }
+
+     .Mitmach-card__content {
+        height: 600px;
+    }
+
     }
 
  @media all and (max-width: 1750px) {
@@ -1690,6 +2469,12 @@ height: 1000px;
          margin-bottom: 30px;
          padding-top: 45px;
      }
+
+     .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        height: 400px;
+    
+    }
+
 
     }
 
@@ -1731,16 +2516,7 @@ height: 1000px;
          margin-bottom: 30px;
          padding-top: 45px;
      }
-     /*
-     .grid-item-image {
-        grid-row-start: 1; 
-        grid-row-end: 3; 
-        grid-column-start: 2;
-        grid-column-end: 2;
-        max-inline-size: 95%;
-        padding-left: 50px;
-    }
-*/
+    
  }
 
 
@@ -1752,14 +2528,14 @@ height: 1000px;
      }
 
      .grid-item {
-        margin-top: 80px;
+        margin-top: 90px;
         }
      .illu {
         width: 95%;
          }
     
      .grid-item-1 {
-        margin-top: 80px;   
+        margin-top: 90px;   
     }
      
      .grid-item-2 {
@@ -1780,7 +2556,7 @@ height: 1000px;
      }
 
      .Highlights-Row {
-        height: 900px;
+        height: 1000px;
         }
       
     .Mitmach-grid {
@@ -1796,12 +2572,98 @@ height: 1000px;
     }
  
      .Links-Footer-Kontakt-Spalte-4 {
-        padding-left: 62px;
+        padding-left: 68px;
      }
     
      .Links-Footer-Kontakt-Spalte-6 {
-        padding-left: 34px;
+        padding-left: 35px;
      }
+     
+     .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        height: 350px;
+    
+    }
+
+    .Mitmach-grid-card {
+        grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+        }
+
+        .container-film {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            background: white;       
+        }
+        
+        .film-bg {
+            grid-row: 1 / 6;
+            grid-column: 1 / 6;
+        }
+        
+        .film-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background: #f7f6f6;
+            opacity: 0.75;
+        }
+        
+        .film-poster {
+            display: grid;
+            grid-row: 1 / 5;
+            grid-column: 1 / 4;
+        }
+        
+        .film-poster-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        
+        .film-header {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 4 / 7; 
+            padding-top: 40px;
+        }
+        
+        .film-subtitle {
+            margin-bottom: 15px;
+        }
+               
+        .film-details {
+            margin-bottom: 30px;
+        }
+        
+        
+        .film-beschreibung {
+            display: grid;
+            grid-row: 2 / 4;
+            grid-column: 4 / 7;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        
+        .film-beschreibung-h2 {
+            font-size: var(--fs-m);
+            margin-bottom: 20px;
+        }
+        
+        
+        .film-beschreibung-p {
+            font-size: var(--fs-normal);
+            margin-bottom: 25px;
+        }
+        
+        .film-a {
+            font-family: "Rethink Sans", serif;
+            font-size: var(--fs-m);
+            margin-bottom: 20px; 
+           
+        }
+
+
 
  }
 
@@ -1816,7 +2678,7 @@ height: 1000px;
         margin-top: 80px;
         }
      .illu {
-        width: 85%;
+        width: 95%;
          }
     
      .grid-item-1 {
@@ -1824,7 +2686,7 @@ height: 1000px;
     }
      
      .grid-item-2 {
-         margin-top: 190px;
+         margin-top: 200px;
      }
      
      .hero-h2 {
@@ -1833,6 +2695,18 @@ height: 1000px;
      }
 
  }
+
+ @media all and (max-width: 1530px) {
+ 
+    .Mitmach-card__subtitle_1 {
+        width: 27%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 73%;
+    }
+
+}
 
 
  @media all and (max-width: 1450px) {
@@ -1846,7 +2720,7 @@ height: 1000px;
         margin-top: 60px;
         }
      .illu {
-        width: 90%;
+        width: 93%;
          }
     
      .grid-item-1 {
@@ -1862,9 +2736,18 @@ height: 1000px;
          padding-top: 20px;
      }
 
+     .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        height: 320px;
+    
+    }
+
+    .Programm-Zeitplan-Row {
+        height: 1550px;
+    }
+
  }
 
- @media all and (max-width: 1400px) {
+ @media all and (max-width: 1435px) {
     .container-hero {
          margin-top: 60px;
          margin-bottom: 40px;
@@ -1875,7 +2758,7 @@ height: 1000px;
     margin-top: 60px;
     }
  .illu {
-    width: 93%;
+    width: 90%;
      }
 
  .grid-item-1 {
@@ -1917,7 +2800,98 @@ height: 1000px;
     padding-left: 31px;
  }
 
+ .slider-card-programm .slider-card-programm-content .slider-card-programm-titlep {
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
 
+.slider-card-programm .slider-card-programm-content .slider-card-programm-subtitlep {
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.slider-card-programm .slider-card-programm-content .slider-card-programm-textp {
+    margin-bottom: 0px;
+    line-height: 1.2;
+}
+
+.slider-card-programm__OrtundZeit {
+    padding-top: 0px;
+}
+
+.Workshop__logo {
+    width: 30%;
+    padding-top: 30px;
+}
+
+.Mitmach-grid-card {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+
+    .Mitmach-card__content {
+        height: 430px;
+    }
+    
+    
+    .Mitmach-card__subtitle_1 {
+        width: 21%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 79%;
+        padding-left: 20px;
+    }
+
+}
+
+@media all and (max-width: 1425px) {
+
+.film-poster-img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: cover;
+}
+
+.film-header {
+    padding-left: 0px;
+}
+
+.film-title {
+    display: grid;
+    font-size: var(--fs-l);
+    margin-bottom: 20px;
+}
+
+
+.film-subtitle {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.film-beschreibung {
+    padding-left: 0px;
+}
+
+}
+
+@media all and (max-width: 1363px) { 
+
+.container-veranstalter {
+    row-gap: 60px;
+ }
+
+ .container-partner {
+    row-gap: 60px;
+ }
+
+}
+
+@media all and (max-width: 1315px) {
+
+    #zummobil {
+    height: 460px;
+}
 }
 
  @media all and (max-width: 1300px) {
@@ -1958,7 +2932,7 @@ height: 1000px;
    
 
     .illu {
-        width: 96%;
+        width: 93%;
         }
     
     .grid-item {
@@ -1983,8 +2957,6 @@ height: 1000px;
         padding-right: 20px;
      }
 
-
-    
  .Bahn {
         height: 90px; 
         padding-top: 10px;
@@ -2004,10 +2976,52 @@ height: 1000px;
 } 
 
 .programm-page_img {
-    background-image: url("images/Mitmach_1300px.png");
-    aspect-ratio: 1 / 2;
+    background-image: url("images/Programm-Header_neu_klein.jpg");
+    aspect-ratio: 1 / 2.6;
     object-fit: cover;
-    height: 600px;
+    height: 100vh;
+}
+
+.slider-card-programm .slider-card-programm-image .slider-programm-img {
+    height: 280px;
+
+}
+
+.film-poster {
+    margin-left: 45px;
+    overflow: hidden;
+}
+
+.film-poster-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.film-header {
+    padding-left: 40px;
+}
+
+.film-title {
+    display: grid;
+    font-size: var(--fs-l);
+    margin-bottom: 20px;
+}
+
+
+.film-subtitle {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.film-beschreibung {
+    padding-left: 40px;
+}
+
+.film-beschreibung-h2 {
+    margin-bottom: 10px;
 }
 
 }   
@@ -2023,7 +3037,110 @@ height: 1000px;
     
 }
 }
+
+@media all and (max-width: 1260px){
+
+.container-film {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.film-bg {
+    grid-row: 1 / 4;
+    grid-column: 1 / 7;
+}
+
+.film-poster {
+    display: grid;
+    grid-row: 1 / 4;
+    grid-column: 1 / 4;
+}
+
+.film-poster-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding-right: 40px;
+}
+
+.film-header {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 4 / 7; 
+    padding-top: 45px;
+    padding-left: 0px;
+}
+
+.film-title {
+    margin-bottom: 30px;
+
+}
+
+.film-subtitle {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+       
+.film-details {
+    margin-bottom: 30px;
+}
+
+
+.film-beschreibung {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 4 / 7;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.film-beschreibung-h2 {
+    font-size: var(--fs-m);
+    margin-bottom: 20px;
+}
+
+
+.film-beschreibung-p {
+    font-size: var(--fs-normal);
+    margin-bottom: 30px;
+}
+
+.film-a {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-m);
+
+   
+}
+
+}
+
+@media all and (max-width: 1250px){
+
+.grid-item-2 {
+     margin-top: 140px;
+}
  
+.Mitmach-card__content {
+    height: 450px;
+}
+
+
+#zummobil {
+    height: 480px;
+}
+
+.Mitmach-card__subtitle_1 {
+    width: 21%;
+}
+
+.Mitmach-card__subtitle_2 {
+    width: 79%;
+    padding-left: 20px;
+}
+
+}
+
  @media all and (max-width: 1200px){
     .container-hero {
         margin-top: 60px;
@@ -2037,19 +3154,19 @@ height: 1000px;
        }
    
     .illu {
-        width: 96%;
+        width: 92%;
         }
     
     .grid-item {
-        margin-top: 30px;   
+        margin-top: 40px;   
         }
 
     .grid-item-1 {
-        margin-top: 30px;   
+        margin-top: 40px;   
     }
      
     .grid-item-2 {
-         margin-top: 120px;
+         margin-top: 130px;
     }
      
     .hero-h2 {
@@ -2075,7 +3192,7 @@ height: 1000px;
     }
     
     .item-overlay {
-        font-size: 1.15rem;
+        font-size: var(--fs-m);
         margin-bottom: 30px;
         }
 
@@ -2128,6 +3245,34 @@ height: 1000px;
         padding-left: 29px;
      }
 
+     .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        height: 270px;
+    
+    }
+
+    .Mitmach-grid-card {
+        grid-template-columns: repeat(auto-fit, minmax(539px, 1fr));
+        }
+
+    .Mitmach-card__content {
+        height: 400px;
+    }
+    
+    #zummobil {
+        height: 430px;
+    }
+    
+    .Mitmach-card__subtitle_1 {
+        width: 21%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 79%;
+        padding-left: 10px;
+    }
+
+
+
  }
 
  @media all and (max-width: 1160px) {
@@ -2140,6 +3285,20 @@ height: 1000px;
     contrast(145%);
     transition: filter .3s;
 }
+.Mitmach-card__content {
+    height: 420px;
+}
+
+
+.Mitmach-card__subtitle_1 {
+    width: 23%;
+}
+
+.Mitmach-card__subtitle_2 {
+    width: 77%;
+    padding-left: 10px;
+}
+
  }
 
  @media all and (max-width: 1130px) {
@@ -2162,11 +3321,11 @@ height: 1000px;
         }
     
         .grid-item {
-            margin-top: 10px;   
+            margin-top: 5px;   
             }
     
         .grid-item-1 {
-            margin-top: 10px;   
+            margin-top: 5px;   
         }
          
         .grid-item-2 {
@@ -2182,6 +3341,105 @@ height: 1000px;
             font-size: var(--fs-normal);
 
         }
+
+        .Links-Footer-Kontakt-Spalte-4 {
+            padding-left: 55px;
+         }
+        
+        .Links-Footer-Kontakt-Spalte-6 {
+            padding-left: 31px;
+         }
+
+         .Mitmach-card__content {
+            height: 400px;
+        }
+        
+        
+        .Mitmach-card__subtitle_1 {
+            width: 25%;
+        }
+        
+        .Mitmach-card__subtitle_2 {
+            width: 75%;
+            padding-left: 10px;
+        }
+
+        .container-film {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        
+        .film-bg {
+            grid-row: 1 / 4;
+            grid-column: 1 / 7;
+        }
+        
+        .film-poster {
+            display: grid;
+            grid-row: 1 / 4;
+            grid-column: 1 / 4;
+        }
+        
+        .film-poster-img {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding-right: 20px;
+        }
+        
+        .film-header {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 4 / 7; 
+            padding-top: 40px;
+            padding-left: 20px;
+        }
+        
+        .film-title {
+            margin-bottom: 20px;
+        
+        }
+        
+        .film-subtitle {
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+               
+        .film-details {
+            margin-bottom: 20px;
+        }
+        
+        
+        .film-beschreibung {
+            display: grid;
+            grid-row: 2 / 3;
+            grid-column: 4 / 7;
+            padding-right: 40px;
+            padding-left: 20px;
+        }
+        
+        .film-beschreibung-h2 {
+            font-size: var(--fs-m);
+            margin-bottom: 15px;
+        }
+        
+        
+        .film-beschreibung-p {
+            font-size: var(--fs-normal);
+            margin-bottom: 20px;
+        }
+        
+        .film-a {
+            font-family: "Rethink Sans", serif;
+            font-size: var(--fs-m);
+            margin-bottom: 20px; 
+           
+        }
+
+
  }
  
  @media all and (max-width: 1092px) {
@@ -2225,11 +3483,18 @@ height: 1000px;
 
         }
 
+        .slider-card-programm .slider-card-programm-image .slider-programm-img {
+            height: 260px;
+        
+        }
+
+
  }
 
 
  @media all and (max-width: 1078px) {
- .container-programm {
+ 
+   .container-programm {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr 1fr;
@@ -2237,10 +3502,39 @@ height: 1000px;
     margin-inline: auto;
  }
 
+    .illu {
+        width: 90%;
+    }
+
+    .grid-item {
+        margin-top: 0px;   
+    }
+
+    .grid-item-1 {
+        margin-top: 0px;   
+    }
+     
+    .grid-item-2 {
+         margin-top: 80px;
+    }
+
+    .Links-Footer-Kontakt-Spalte-4 {
+        padding-left: 53px;
+     }
+    
+    .Links-Footer-Kontakt-Spalte-6 {
+        padding-left: 29px;
+     }
+
+
 .Mitmach-grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr 1fr;
  }
+
+ .Mitmach-grid-card {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
 }
 
  @media all and (max-width: 1030px) {
@@ -2269,9 +3563,6 @@ height: 1000px;
         .grid-item-2 {
              margin-top: 100px;
         }
- }
-
- @media all and (max-width: 1030px) {
 
     .lineup-bands-img {
        width: 100%;
@@ -2283,10 +3574,41 @@ height: 1000px;
    }
     }
 
+    @media all and (max-width: 1025px) {
+
+    .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        height: 400px;
+    }
+
+    .slider-card-programm__Zeit_1 {
+        width: 14%;
+    }
+      
+    .slider-card-programm__Zeit_2 {
+        width: 86%;
+    }
+
+    .slider-card-programm__Ort_1 {
+        width: 14%;
+    }
+    
+    .slider-card-programm__Ort_2 {
+        width: 86%;
+    }
+
+    }
+
  @media all and (max-width: 1015px) {
 
     .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 35px;
+    }
+
+    .Mitmach-card__Zeit_2 {
+        padding-left: 10px;
+    }
+    .Mitmach-card__Ort_2 {
+        padding-left: 10px;
     }
 
  }
@@ -2306,6 +3628,41 @@ height: 1000px;
     font-size: 1.15rem;
 }
 
+.slider-card-programm .slider-card-programm-image .slider-programm-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.Mitmach-grid-card {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .Mitmach-card__content {
+        height: 430px;
+    }
+    
+    #zummobil {
+        height: 450px;
+    }
+    
+
+    .Mitmach-card__subtitle_1 {
+        width: 27%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 73;
+        padding-left: 10px;
+    }
+
+    .Mitmach__logo {
+        display: grid;
+        width: 30%;
+        object-fit: cover;
+        padding-top: 30px;
+    }
+
  }
 
  @media all and (max-width: 990px) {
@@ -2316,9 +3673,91 @@ height: 1000px;
         padding-bottom: 5px;
     }
     .illu {
-        width: 93%;
+        width: 91%;
         }
     
+        #myImage{
+            content: url(http://127.0.0.1:3000/images/Der-Lorax-800px.jpg) !important;
+        }
+
+        .container-film {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        
+        .film-bg {
+            grid-row: 1 / 4;
+            grid-column: 1 / 3;
+        }
+        
+        .film-poster {
+            display: grid;
+            grid-row: 1 / 1;
+            grid-column: 1 / 8;
+            margin-top: 0px;
+            padding-top: 20px;
+            padding-right: 20px;
+            align-self: start;
+        }
+        
+        .film-poster-img {
+            object-fit: contain;
+            width: 100%;
+
+        }
+        
+        .film-header {
+            display: grid;
+            grid-row: 1 / 1;
+            grid-column: 1 / 8; 
+
+            padding-left: 45px;
+
+        }
+        
+        .film-title {
+            margin-top: 360px;
+            margin-bottom: 20px;
+        
+        }
+        
+        .film-subtitle {
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            line-height: 1.0;
+        }
+               
+        .film-details {
+            margin-bottom: 30px;
+        }
+        
+        
+        .film-beschreibung {
+            display: grid;
+            grid-row: 2 / 3;
+            grid-column: 4 / 7;
+            padding-right: 40px;
+            padding-left: 45px;
+        }
+        
+        .film-beschreibung-h2 {
+            font-size: var(--fs-m);
+            margin-bottom: 15px;
+        }
+        
+        
+        .film-beschreibung-p {
+            font-size: var(--fs-normal);
+            margin-bottom: 20px;
+        }
+        
+        .film-a {
+            font-family: "Rethink Sans", serif;
+            font-size: var(--fs-m);
+            margin-bottom: 20px; 
+           
+        }
+
 
  }
 
@@ -2338,8 +3777,12 @@ height: 1000px;
 
  @media all and (max-width: 950px) {
 
+    .Links-Footer-Kontakt-Spalte-4 {
+        padding-left: 50px;
+     }
+    
     .Links-Footer-Kontakt-Spalte-6 {
-        padding-left: 40px;
+        padding-left: 32px;
     }
 
  }
@@ -2439,10 +3882,11 @@ height: 1000px;
        grid-column-start: 2;
        grid-column-end: 3;
        overflow: hidden;
-       margin-top: 20px;
+       margin-top: 30px;
+       padding-left: 10px;
     }
     .illu {
-       width: 90%;
+       width: 88%;
     }
     
     .grid-item-2 {
@@ -2498,7 +3942,97 @@ height: 1000px;
         padding-left: 31px;
      }
 
-   
+     .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+     .slider-card-programm__Zeit_1 {
+        width: 21%;
+    }
+      
+    .slider-card-programm__Zeit_2 {
+        width: 79%;
+    }
+
+    .slider-card-programm__Ort_1 {
+        width: 21%;
+    }
+    
+    .slider-card-programm__Ort_2 {
+        width: 79%;
+    }
+
+    .Mitmach-card__content {
+        height: 540px;
+    }
+    
+    .Mitmach-card__subtitle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Mitmach-card__subtitle_1 {
+        width: 100%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 100%;
+        padding-left: 0px;
+
+    }
+
+    .Mitmach-card__Zeit_2 {
+        padding-left: 25px;
+    }
+    .Mitmach-card__Ort_2 {
+        padding-left: 25px;
+    }
+
+    
+    .film-poster {
+        display: grid;
+        grid-row: 1 / 2;
+        grid-column: 1 / 8;
+        padding-right: 0px;
+        padding-top: 20px;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-left: 0px;
+        align-self: start;
+    }
+    
+    .film-poster-img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .film-header {
+        display: grid;
+        grid-row: 1 / 1;
+        grid-column: 1 / 8; 
+        padding-top: 0px;
+        padding-left: 45px;
+        margin-top: 370px;
+
+    }
+    
+    .film-title {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    
+    }
+
+    .film-beschreibung {
+        padding-right: 20px;
+        padding-left: 45px;
+        grid-row: 3 / 4;
+        grid-column: 1 / 8; 
+    }
+
     }
 
     @media all and (max-width: 897px) {
@@ -2510,7 +4044,31 @@ height: 1000px;
             padding-top: 51px;
             padding-left: 40px;
         }
+
+        .Mitmach-card__content {
+            height: 550px;
         }
+
+        #zummobil {
+            height: 600px;
+        }
+        }
+
+
+@media all and (max-width: 860px) {
+
+    .illu {
+        width: 92%;
+     }
+
+     .uber-uns-logo-container {
+        width: 30%;
+    }
+
+    .logo-text-ueberuns-p {
+        width: 70%;
+    }
+}
 
 
 @media all and (max-width: 830px) {
@@ -2585,6 +4143,56 @@ height: 1000px;
         margin-left: 20px;
         margin-right: 25px;
         }
+
+
+        #myImage{
+            content: url(http://127.0.0.1:3000/images/Der-Lorax-800spx.jpg) !important;
+        }
+        .film-poster {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 8;
+            padding-right: 0px;
+            padding-top: 20px;
+            padding-left: 0px;
+            align-self: start;
+   
+        }
+        
+        .film-poster-img {
+            object-fit: coVER;
+            width: 100%;
+            padding-right: 40px;    
+        }
+        
+        .film-header {
+            display: grid;
+            grid-row: 1 / 1;
+            grid-column: 1 / 8; 
+            padding-top: 0px;
+            padding-left: 45px;
+            margin-top: 370px;
+    
+        }
+        
+        .film-title {
+            margin-top: 0px;
+            margin-bottom: 20px;
+        
+        }
+    
+        .film-beschreibung {
+            padding-right: 20px;
+            padding-left: 45px;
+            grid-row: 3 / 4;
+            grid-column: 1 / 8; 
+        }
+
+        .ueberuns {
+            margin-left: 20px;
+            margin-right: 20px;
+            }
+        
 }
 
 
@@ -2599,6 +4207,49 @@ height: 1000px;
     padding-left: 30px;
  }
 
+
+ .Mitmach-card__content {
+    height: auto;
+}
+
+#zummobil {
+    height: auto;
+}
+
+.Mitmach-card__subtitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.Mitmach-card__subtitle_1 {
+    width: 17%;
+}
+
+.Mitmach-card__subtitle_2 {
+    width: 83%;
+    padding-left: 0px;
+
+}
+
+.Mitmach-card__Zeit_2 {
+    padding-left: 0px;
+}
+.Mitmach-card__Ort_2 {
+    padding-left: 0px;
+}
+
+.Mitmach__logo {
+    display: grid;
+    width: 20%;
+    object-fit: cover;
+    padding-top: 30px;
+}
+
+.film-header {
+    margin-top: 350px;
+
+}
+
 }
 
 @media all and (max-width: 785px) {
@@ -2610,12 +4261,23 @@ height: 1000px;
         padding-top: 47px;
         padding-left: 40px;
     }
+
+    .Mitmach-card__subtitle_1 {
+        width: 19%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 81%;
+        padding-left: 0px;
+    
+    }
     }
 
 @media all and (max-width: 765px) {
 
     .grid-item-image {
         margin-top: 20px;
+        padding-left: 0px;
     }
     .illu {
         width: 94%;
@@ -2661,6 +4323,21 @@ height: 1000px;
     padding-top: 50px;
     padding-bottom: 0px;
 }
+.slider-card-programm .slider-card-programm-image .slider-programm-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.film-header {
+    margin-top: 330px;
+
+}
+
+.film-subtitle {
+line-height: 1.5;
+
+}
 
     }
 
@@ -2677,7 +4354,7 @@ height: 1000px;
         justify-content: center;
      }
      .illu {
-        width: 95%;
+        width: 97%;
      }
      
      .hero-h1 {
@@ -2695,6 +4372,19 @@ height: 1000px;
          margin-top: 0px;
      }
 
+     .hero-h2 {
+        padding-right: 20px;
+    }
+    
+    .hero-p {
+        padding-right: 20px;
+    }
+    
+    .hero-p2 {
+        padding-right: 20px;
+   }
+
+
     .Highlights-Title {
         padding-bottom: 30px;
 
@@ -2711,6 +4401,51 @@ height: 1000px;
     }
 }
 
+@media all and (max-width: 700px) {
+
+    .film-header {
+        margin-top: 310px;
+    }
+}
+
+@media all and (max-width: 670px) {
+
+.Mitmach-card__subtitle_1 {
+    width: 23%;
+}
+
+.Mitmach-card__subtitle_2 {
+    width: 77%;
+    padding-left: 0px;
+
+}
+
+}
+
+@media all and (max-width: 650px) {
+    
+    .slider-card-programm .slider-card-programm-image .slider-programm-img {
+        height: 450px;
+    }
+
+    .slider-card-programm__Zeit_1 {
+        width: 12%;
+    }
+      
+    .slider-card-programm__Zeit_2 {
+        width: 88%;
+    }
+
+    .slider-card-programm__Ort_1 {
+        width: 12%;
+    }
+    
+    .slider-card-programm__Ort_2 {
+        width: 88%;
+    }
+
+}
+
 
 @media all and (max-width: 630px) {
     /* Neu hinzugefügt 20.3.*/
@@ -2718,6 +4453,14 @@ height: 1000px;
         margin-top: 35px;
         margin-bottom: 40px;
         margin-left: 20px;
+    }
+
+    .Mitmach__logo {
+        width: 25%;
+    }
+    
+    .film-header {
+        margin-top: 290px;
     }
 
 }
@@ -2732,19 +4475,24 @@ height: 1000px;
 
 .partner__logo__1 {
 
-    padding-left: 130px;
-    width: 75%;
+    padding-left: 0px;
+    width: 50%;
 }
 
 .partner__logo__2 {
-    width: 75%;
-    padding-left: 130px;
+    width: 50%;
+    padding-left: 0px;
 }
 
 
 .partner__logo__3 {
-    width: 75%;
-    padding-left: 130px;
+    width: 50%;
+    padding-left: 0px;
+}
+
+.partner__logo__4 {
+    width: 50%;
+    padding-left: 0px;
 }
 
 .Links-Footer-Kontakt-Spalte-4 {
@@ -2755,15 +4503,73 @@ height: 1000px;
     padding-left: 30px;
  }
 
-}
-
-@media all and (max-width: 600px) {
-
 .programm-page-item-overlay {
     font-size: var(--fs-xl);
     margin-left: 50%;
     margin-right: 100px;
  }
+
+ .illu {
+    width: 95%;
+ }
+
+ .slider-card-programm .slider-card-programm-image .slider-programm-img {
+    height: 400px;
+}
+
+.Mitmach-card__subtitle_1 {
+    width: 25%;
+}
+
+.Mitmach-card__subtitle_2 {
+    width: 75%;
+    padding-left: 0px;
+
+}
+
+#MCZUM {
+    height: 450px;
+}
+
+.film-header {
+    margin-top: 270px;
+}
+
+.container-logo-text-ueberuns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.uber-uns-logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    align-self: center;
+}
+
+.logo-ueberuns {
+    width: 100%;
+    object-fit: contain;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-text-ueberuns-p {
+    display: flex;  
+    margin-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    align-self: flex-start;
+}
 
 }
 
@@ -2788,6 +4594,13 @@ height: 1000px;
         padding-left: 30px;
      }
     }
+
+@media all and (max-width: 560px) {
+
+    .film-header {
+        margin-top: 250px;
+    }
+}
 
 @media all and (max-width: 542px) {
     
@@ -2815,14 +4628,19 @@ height: 1000px;
     }
 
     .Highlights-Title {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
 
      }
     
      .Highlights-Zeile {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
 
      }
+
+     .Highlights-Row {
+        height: 750px;
+        }
+
 
     .anfahrt-img {
         height: 25vh;
@@ -2832,12 +4650,22 @@ height: 1000px;
     .highlight-paragraph {
         color: #F8EB22;
         margin-bottom: 20px;
-        font-size: 1.2rem;
+        font-size: var(--fs-normal);
     }
+    .link-highlights-a {
+        font-family: "Rethink Sans", serif;
+        font-size: var(--fs-normal);
+        color: #F8EB22;
+     }
 
     .Mitmach-grid {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-template-rows: 1fr 1fr; 
+    }
+
+    .Mitmach-grid-card {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
     }
 
 
@@ -2854,10 +4682,48 @@ height: 1000px;
 .Anfahrt-Sub-Title {
     flex-basis: 30px;
 }
-}
 
 .anfahrt__img {
     height: 60vh;
+}
+
+.slider-card-programm__Zeit_1 {
+    width: 15%;
+}
+  
+.slider-card-programm__Zeit_2 {
+    width: 85%;
+}
+
+.slider-card-programm__Ort_1 {
+    width: 15%;
+}
+
+.slider-card-programm__Ort_2 {
+    width: 85%;
+}
+
+.Mitmach-card__subtitle_1 {
+    width: 27%;
+}
+
+.Mitmach-card__subtitle_2 {
+    width: 73%;
+    padding-left: 0px;
+
+}
+
+.Mitmach-card__Zeit_2 {
+    padding-left: 5px;
+}
+.Mitmach-card__Ort_2 {
+    padding-left: 5px;
+}
+
+.film-header {
+    margin-top: 230px;
+}
+
 }
 
 @media all and (max-width: 520px) {
@@ -2867,6 +4733,10 @@ height: 1000px;
     padding-bottom: 0px;
     background-position: center;
  } 
+
+ .slider-card-programm .slider-card-programm-image .slider-programm-img {
+    height: 350px;
+}
 
 }
 
@@ -2895,6 +4765,28 @@ height: 1000px;
         padding-top: 0.4rem;
         padding-bottom: 0.4rem;  
      }
+
+     .Mitmach-card__subtitle_1 {
+        width: 35%;
+    }
+    
+    .Mitmach-card__subtitle_2 {
+        width: 65%;
+        padding-left: 0px;
+    
+    }
+    
+    .Mitmach-card__Zeit_2 {
+        padding-left: 20px;
+    }
+    .Mitmach-card__Ort_2 {
+        padding-left: 20px;
+    }
+
+    #MCZUM {
+        height: 500px;
+    }
+
     }
 
 @media all and (max-width: 495px) {
@@ -2915,25 +4807,57 @@ height: 1000px;
         gap: 80px;
     }
 
-.partner__logo__1 {
+    .partner__logo__1 {
 
-    padding-left: 110px;
-    width: 75%;
+        padding-left: 0px;
+        width: 50%;
+    }
+    
+    .partner__logo__2 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
+    
+    .partner__logo__3 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
+    .partner__logo__4 {
+        width: 50%;
+        padding-left: 0px;
+    }
+
 }
 
-.partner__logo__2 {
-    width: 75%;
-    padding-left: 110px;
+@media all and (max-width: 480px) {
+
+.slider-card-programm .slider-card-programm-image .slider-programm-img {
+    height: 300px;
 }
 
+.slider-card-programm__Zeit_1 {
+    width: 20%;
+}
+  
+.slider-card-programm__Zeit_2 {
+    width: 80%;
+}
 
-.partner__logo__3 {
-    width: 75%;
-    padding-left: 110px;
+.slider-card-programm__Ort_1 {
+    width: 20%;
+}
+
+.slider-card-programm__Ort_2 {
+    width: 80%;
+}
+
+.film-header {
+    margin-top: 210px;
 }
 
 }
-
 
 @media all and (max-width: 465px) {
 
@@ -2943,6 +4867,49 @@ height: 1000px;
         padding-bottom: 5px;
 
     } 
+
+    .grid-item {
+        margin-top: 5px;
+       }
+
+    .grid-item-1 {
+    margin-top: 5px;
+    }
+
+    .Mitmach-card__subtitle {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 450px) {
+.grid-item {
+    margin-top: 0px;
+   }
+
+   .Mitmach__logo {
+    width: 30%;
+}
+
+.Mitmach-card__subtitle {
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+#MCZUM {
+    height: 570px;
+}
+
+
+.grid-item-1 {
+margin-top: 0px;
+}
+
+.film-header {
+    margin-top: 190px;
+}
+
 }
 
 @media all and (max-width: 435px) {
@@ -2953,6 +4920,10 @@ height: 1000px;
         padding-bottom: 5px;
 
     } 
+
+    #MCZUM {
+        height: 630px;
+    }
 }
 
 @media all and (max-width: 430px) {
@@ -2963,27 +4934,74 @@ height: 1000px;
         gap: 80px;
     }
 
-.partner__logo__1 {
+    .partner__logo__1 {
 
-    padding-left: 90px;
-    width: 75%;
+        padding-left: 0px;
+        width: 50%;
+    }
+    
+    .partner__logo__2 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
+    
+    .partner__logo__3 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
+    .partner__logo__4 {
+        width: 50%;
+        padding-left: 0px;
+    }
 }
 
-.partner__logo__2 {
-    width: 75%;
-    padding-left: 90px;
+
+
+@media all and (max-width: 410px) {
+
+.grid-item-title {
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 20px;
+}
+     
+ .grid-item {
+     grid-row-start: 1; 
+     grid-row-end: 4; 
+     grid-column-start: 1;
+     grid-column-end: 2;
+     margin-top: 100px;
+    }
+
+ .grid-item-1 {
+    grid-row-start: 1; 
+    grid-row-end: 4; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 100px; 
+    margin-right: 20px;
 }
 
+.Links-Footer-Kontakt-Spalte-4 {
+    padding-left: 55px;
+ }
 
-.partner__logo__3 {
-    width: 75%;
-    padding-left: 90px;
+ .Links-Footer-Kontakt-Spalte-6 {
+    padding-left: 30px;
+ }
+
 }
 
+@media all and (max-width: 400px) {
+
+.film-header {
+    margin-top: 170px;
 }
-
-
-
+}
 
 @media all and (max-width: 390px) {
 
@@ -2993,6 +5011,15 @@ height: 1000px;
         padding-bottom: 5px;
 
     } 
+
+    .grid-item {
+        margin-top: 90px;
+       }
+   
+    .grid-item-1 {
+       margin-top: 90px; 
+
+   }
 
     .programm-page-item-overlay {
 
@@ -3011,7 +5038,7 @@ height: 1000px;
 @media all and (max-width: 385px) {
 
 .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 34px;
+    padding-left: 31px;
 }
 
 }
@@ -3020,12 +5047,16 @@ height: 1000px;
 @media all and (max-width: 378px) {
 
 .Links-Footer-Kontakt-Spalte-4 {
-    padding-left: 57px;
+    padding-left: 55px;
  }
 
  .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 36px;
+    padding-left: 30px;
  }
+
+ .film-header {
+    margin-top: 160px;
+}
 
 }
 
@@ -3037,38 +5068,43 @@ height: 1000px;
         gap: 80px;
     }
 
-.partner__logo__1 {
+    .partner__logo__1 {
 
-    padding-left: 75px;
-    width: 75%;
-}
-
-.partner__logo__2 {
-    width: 75%;
-    padding-left: 80px;
-}
-
-
-.partner__logo__3 {
-    width: 75%;
-    padding-left: 80px;
-}
+        padding-left: 0px;
+        width: 50%;
+    }
+    
+    .partner__logo__2 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
+    
+    .partner__logo__3 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
+    .partner__logo__4 {
+        width: 50%;
+        padding-left: 0px;
+    }
 
 .Links-Footer-Kontakt-Spalte-4 {
-    padding-left: 58px;
+    padding-left: 55px;
  }
 .Links-Footer-Kontakt-Spalte-6 {
-    padding-left: 38px;
+    padding-left: 32px;
 }
 }
 
 @media all and (max-width: 355px) {
 
     .Links-Footer-Kontakt-Spalte-4 {
-        padding-left: 57px;
+        padding-left: 55px;
      }
     .Links-Footer-Kontakt-Spalte-6 {
-        padding-left: 39px;
+        padding-left: 35px;
     }
 }
 
