@@ -359,15 +359,25 @@ html {
     font-family: "Rethink Sans", serif; 
     scroll-behavior: smooth;
     font-size: var(--fs-normal);
-
 }
 
 body {
     background-color: #F8EB22;
     font-family: "Rethink Sans", serif;
     padding-top: 50px;  
-
 }
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 
 /* Navbar*/
 
@@ -1040,8 +1050,9 @@ video {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-
-
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .icon {
@@ -2141,7 +2152,6 @@ a.a-lineup-bands:hover {
         background-color: white;
         padding-left: 20px;
         padding-right: 20px;
-
     }
 
     .uber-uns-logo-container {
@@ -2193,33 +2203,22 @@ a.a-lineup-bands:hover {
     
 
 
-/*
-a:hover, a:focus .a-lineup-bands  {
-    color: #F8EB22;
-}
-*/
+
+
+
  /* Media Queries */
 
-  @media all and (max-width: 2100px) {
-    .container-hero {
-         margin-top: 60px;
-         margin-bottom: 40px;
-         margin-left: 40px;
-     }
-    /* 
-     .grid-item-image {
-        grid-row-start: 1; 
-        grid-row-end: 3; 
-        grid-column-start: 2;
-        grid-column-end: 2;
-        max-inline-size: 85%;
-        padding-left: 50px;
-     }
-*/
+@media all and (max-width: 2100px) {
+
+.container-hero {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
 
 .illu {
-    width: 93%;
-    }
+    width: 95%;
+ }
 
 .grid-item {
     margin-top: 160px;   
@@ -2238,8 +2237,13 @@ a:hover, a:focus .a-lineup-bands  {
      padding-top: 45px;
 }
 
+.container-programm {
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-template-rows: 1fr 1fr; 
+}
+
 .Highlights-Row {
-height: 1100px;
+    height: 1100px;
 }
 
 .Anfahrt-Sub-Title {
@@ -2254,32 +2258,19 @@ height: 1100px;
     padding-left: 42px;
 }
 
+.Programm-Zeitplan-Row {
+    height: 2000px;
 }
 
-@media all and (max-width: 2100px) {
-
-    .illu {
-        width: 95%;
-        }
-
-    .Programm-Zeitplan-Row {
-        height: 2000px;
-    }
-
 }
+
 
 @media all and (max-width: 2000px) {
 
-.container-programm {
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    
-}
 .illu {
     width: 95%;
-    }
+}
   
-
 .Links-Footer-Kontakt-Spalte-4 {
     padding-left: 82px;
  }
@@ -3677,6 +3668,7 @@ height: 1100px;
         }
     
         #myImage{
+            /*content: url(http://127.0.0.1:3000/images/Der-Lorax-800px.jpg) !important;*/
             content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800px.jpg) !important;
         }
 
@@ -4144,9 +4136,9 @@ height: 1100px;
         margin-right: 25px;
         }
 
-
         #myImage{
             content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800spx.jpg) !important;
+            /*content: url(http://127.0.0.1:3000/images/Der-Lorax-800spx.jpg) !important;*/
         }
         .film-poster {
             display: grid;
