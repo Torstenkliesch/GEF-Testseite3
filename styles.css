@@ -1391,7 +1391,7 @@ a.a-program-links:hover {
     height: 100vh;
     object-fit: cover;
     filter: grayscale(100%)
-    contrast(125%);
+    contrast(115%);
     transition: filter .3s;
     z-index: 0;
 }
