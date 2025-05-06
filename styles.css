@@ -1402,7 +1402,7 @@ a.a-program-links:hover {
 .programm-page_img { background-attachment: scroll; }
 }
 
-
+_:-moz-tree-row(hover), .programm-page_img {background-attachment: fixed;}
 
 
 
