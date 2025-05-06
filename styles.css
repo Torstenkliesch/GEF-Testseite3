@@ -1382,7 +1382,8 @@ a.a-program-links:hover {
  } 
 
  .programm-page_img {
-    background-image: url("images/Programm-Header_neu.jpg");
+    /*background-image: url("images/Programm-Header_neu.jpg");*/
+    background-image: url("images/antenna-cw-cj_nFa14-unsplash.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -1842,7 +1843,7 @@ a.a-program-links:hover {
 }
 
  .Programm-Familienprogramm-Row::after {
-    content: '';
+    content: ' ';
     position: absolute;
     inset: 0;
     z-index: -1;
