@@ -1390,35 +1390,15 @@ a.a-program-links:hover {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter: grayscale(80%)
+    filter: grayscale(100%)
     contrast(115%);
     transition: filter .3s;
     z-index: 0;
 }
 
-/* Safari 11+ */
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-.programm-page_img { 
-    background-attachment: scroll; 
-}
-}}
+/* Safari Code */
 
-/* Safari 10.1 */
-@media not all and (min-resolution:.001dpcm){ 
-@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
-.programm-page_img { 
-    background-attachment: scroll; 
-}
-}}
-
-/* Safari 6.1-10.0 (but not 10.1) */
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
- {
-        .programm-page_img { 
-            background-attachment: scroll; 
-    }
-    }
+.programm-page_img:not(*:root) { background-attachment: fixed; }
 
 
 
