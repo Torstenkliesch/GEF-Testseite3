@@ -848,6 +848,16 @@ transition: 1.5s;
     color: #F8EB22;
  }
 
+ .section-ueberschrift-h {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-l);
+    font-weight: 600; 
+    color: #F8EB22;
+    margin-bottom: 45px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
 
  /* Bands Section */ 
  
@@ -1459,6 +1469,13 @@ a.a-program-links:hover {
     margin-bottom: 35px;
 }
 
+.link-highlights-az {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-normal);
+    color: #F8EB22;
+ }
+
+
 /* Stlyes für Brunch */
 
 .brunch-img {
@@ -1790,6 +1807,16 @@ a.a-program-links:hover {
 
 } 
 
+.section-ueberschrift-v {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-l);
+    font-weight: 600; 
+    color: #F8EB22;
+    margin-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
  .Programm-Familienprogramm-Row {
     display: flex;
     flex-direction: column;
@@ -1818,6 +1845,15 @@ a.a-program-links:hover {
 
 }
 
+.section-ueberschrift-f {
+    font-family: "Rethink Sans", serif;
+    font-size: var(--fs-l);
+    font-weight: 600; 
+    color: #F8EB22;
+    margin-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase; 
+}
 
 .container-film {
     display: grid;
@@ -2446,6 +2482,10 @@ a.a-lineup-bands:hover {
     height: 2000px;
 }
 
+.Programm-Familienprogramm-Row {
+    height: 1100px;
+}
+
 }
 
 
@@ -2614,6 +2654,10 @@ a.a-lineup-bands:hover {
 
      .Mitmach-card__content {
         height: 600px;
+    }
+
+    .Programm-Familienprogramm-Row {
+        height: 900px;
     }
 
     }
@@ -4692,6 +4736,21 @@ line-height: 1.5;
         margin-left: 40%;
      }
 
+     .section-ueberschrift-f {
+        margin-bottom: 55px;
+ 
+    }
+
+    .section-ueberschrift-v {
+        margin-bottom: 55px;
+ 
+    }
+
+    .section-ueberschrift-z {
+        margin-bottom: 55px;
+ 
+    }
+
 }
 
 @media all and (max-width: 700px) {
@@ -4963,6 +5022,18 @@ line-height: 1.5;
         font-size: var(--fs-normal);
         color: #F8EB22;
      }
+
+     .section-ueberschrift-h {
+        font-size: var(--fs-m);
+    }
+
+    .section-ueberschrift-v {
+        font-size: var(--fs-m);
+    }
+
+    .section-ueberschrift-f {
+        font-size: var(--fs-m);
+    }
 
     .Mitmach-grid {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
