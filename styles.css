@@ -1785,7 +1785,7 @@ a.a-program-links:hover {
 
 .Programm-Vortraege-Row {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -1794,17 +1794,15 @@ a.a-program-links:hover {
     padding-bottom: 50px;
     background-image: url("images/Fishbowl-neu-bw.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll; 
-    /*background-attachment: fixed;*/
-    background-position: top; 
+    -webkit-background-attachment: scroll;
+    background-attachment: fixed;
     position: relative;
     isolation: isolate;
 }
     
 
  .Programm-Vortraege-Row::after {
-    content: '';
+    content: ' ';
     position: absolute;
     inset: 0;
     z-index: -1;
