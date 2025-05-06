@@ -1398,8 +1398,9 @@ a.a-program-links:hover {
 
 /* Safari Code */
 
-.programm-page_img:not(*:root) { background-attachment: scroll; }
-
+@supports (-webkit-appearance:none) {
+.programm-page_img { background-attachment: scroll; }
+}
 
 
 
