@@ -1386,8 +1386,8 @@ a.a-program-links:hover {
     background-image: url("images/antenna-cw-cj_nFa14-unsplash.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
-    /*background-attachment: fixed;*/
+    -webkit-background-attachment: scroll;
+    background-attachment: fixed;
     background-position: top;
     width: 100%;
     height: 100vh;
