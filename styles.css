@@ -1794,6 +1794,7 @@ a.a-program-links:hover {
     padding-bottom: 50px;
     background-image: url("images/Fishbowl-neu-bw.png");
     background-repeat: no-repeat;
+    background-size: cover;
     -webkit-background-attachment: scroll;
     background-attachment: fixed;
     position: relative;
@@ -1833,8 +1834,8 @@ a.a-program-links:hover {
     background-image: url("images/Familienprogramm-background-bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
-    /*background-attachment: fixed;*/
+    -webkit-background-attachment: scroll;
+    background-attachment: fixed;
     background-position: top;
     position: relative;
     isolation: isolate;
