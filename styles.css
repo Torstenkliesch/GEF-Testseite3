@@ -1465,7 +1465,7 @@ a.a-program-links:hover {
 .Programm-Zeitplan-Row {
     display: flex;
     flex-direction: column;
-    background-image: url("images/Schminken.png");
+    background-image: url("images/istockphoto-1146295734-2048x2048.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1484,7 +1484,7 @@ a.a-program-links:hover {
     .Programm-Zeitplan-Row {
         display: flex;
         flex-direction: column;
-        background-image: url("images/Schminken.png");
+        background-image: url("images/istockphoto-1146295734-2048x2048.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
