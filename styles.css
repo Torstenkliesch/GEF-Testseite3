@@ -1448,8 +1448,7 @@ a.a-program-links:hover {
     background-image: url("images/Schedule-background-bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-position: center;
     align-content: center;
     flex-wrap: wrap;
@@ -1460,6 +1459,27 @@ a.a-program-links:hover {
     position: relative;
     isolation: isolate;
 }
+
+@supports (-webkit-touch-callout: inherit) {
+    .Programm-Zeitplan-Row {
+        display: flex;
+        flex-direction: column;
+        background-image: url("images/Schedule-background-bw.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 1800px;
+        padding-top: 120px;
+        padding-bottom: 50px;
+        position: relative;
+        isolation: isolate;
+    }}
+
+
 
  .Programm-Zeitplan-Row::after {
     content: '';
