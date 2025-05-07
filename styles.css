@@ -1402,11 +1402,11 @@ a.a-program-links:hover {
  } 
 
  .programm-page_img {
-    background-image: url("images/Programm-Header_neu.jpg");
+    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
@@ -1418,11 +1418,11 @@ a.a-program-links:hover {
 
 @supports (-webkit-touch-callout: inherit) {
     .programm-page_img {
-        background-image: url("images/Programm-Header_neu.jpg");
+        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.png");
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
-        background-position: top;
+        background-position: center;
         width: 100%;
         height: 100vh;
         filter: grayscale(100%)
@@ -1465,11 +1465,11 @@ a.a-program-links:hover {
 .Programm-Zeitplan-Row {
     display: flex;
     flex-direction: column;
-    background-image: url("images/Schedule-background-bw.jpg");
+    background-image: url("images/817d1a96-7e60-49b6-8f19-c87c8c0a3ef4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -1484,7 +1484,7 @@ a.a-program-links:hover {
     .Programm-Zeitplan-Row {
         display: flex;
         flex-direction: column;
-        background-image: url("images/Schedule-background-bw.jpg");
+        background-image: url("images/817d1a96-7e60-49b6-8f19-c87c8c0a3ef4.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -3342,7 +3342,7 @@ a.a-lineup-bands:hover {
 } 
 
 .programm-page_img {
-    background-image: url("images/Programm-Header_neu_klein.jpg");
+    background-image: url("images/SolarmodulAufbauGegenlicht-1300.png");
     aspect-ratio: 1 / 2.6;
     object-fit: cover;
     height: 100vh;
@@ -4388,6 +4388,18 @@ a.a-lineup-bands:hover {
      .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 31px;
      }
+
+     .Programm-Zeitplan-Row {
+
+        background-image: url("images/LachendesMädchen-1300.jpg");
+
+        background-position: top;
+
+        width: 100%;
+        height: 1800px;
+
+    }
+
 
      .slider-card-programm .slider-card-programm-image .slider-programm-img {
         width: 100%;
