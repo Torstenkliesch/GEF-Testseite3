@@ -4389,33 +4389,6 @@ a.a-lineup-bands:hover {
         padding-left: 31px;
      }
 
-     .Programm-Zeitplan-Row {
-        background-image: url("images/LachendesMädchen-1300.jpg");
-        background-position: top;
-        width: 100%;
-        height: 1550px;
-
-    }
-
-    @supports (-webkit-touch-callout: inherit) {
-        .Programm-Zeitplan-Row {
-            display: flex;
-            flex-direction: column;
-            background-image: url("images/817d1a96-7e60-49b6-8f19-c87c8c0a3ef4_apple.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: scroll;
-            background-position: center;
-            align-content: center;
-            flex-wrap: wrap;
-            width: 100%;
-            height: 1500px;
-            padding-top: 120px;
-            padding-bottom: 50px;
-
-        }}
-
-
      .slider-card-programm .slider-card-programm-image .slider-programm-img {
         width: 100%;
         height: 300px;
