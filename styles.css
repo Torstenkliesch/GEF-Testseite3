@@ -1855,10 +1855,11 @@ a.a-program-links:hover {
     height: 700px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url("images/Fishbowl-neu-bw.png");
+    background-image: url("images/Fishbowl-neu-bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     position: relative;
     isolation: isolate;
 }
@@ -1873,10 +1874,11 @@ a.a-program-links:hover {
         height: 700px;
         padding-top: 50px;
         padding-bottom: 50px;
-        background-image: url("images/Fishbowl-neu-bw.png");
+        background-image: url("images/Fishbowl-neu-bw.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
+        background-position: center;
         position: relative;
         isolation: isolate;
     }}
@@ -5254,7 +5256,7 @@ line-height: 1.5;
 
 .Programm-Vortraege-Row
 {
-    height: 480px;
+    height: 600px;
 }
 }
 
