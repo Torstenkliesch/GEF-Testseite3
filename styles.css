@@ -4389,6 +4389,11 @@ a.a-lineup-bands:hover {
         padding-left: 31px;
      }
 
+     .Programm-Zeitplan-Row {
+        background-position: center;
+        height: 1700px;
+    }
+
      .slider-card-programm .slider-card-programm-image .slider-programm-img {
         width: 100%;
         height: 300px;
