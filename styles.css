@@ -1465,11 +1465,11 @@ a.a-program-links:hover {
 .Programm-Zeitplan-Row {
     display: flex;
     flex-direction: column;
-    background-image: url("images/Lachendes_Maedchen.jpg");
+    background-image: url("images/IMG-20250507-WA0005.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: top;
+    background-position: center;
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -1484,11 +1484,11 @@ a.a-program-links:hover {
     .Programm-Zeitplan-Row {
         display: flex;
         flex-direction: column;
-        background-image: url("images/Lachendes_Maedchen.jpg");
+        background-image: url("IMG-20250507-WA0005.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
-        background-position: top;
+        background-position: center;
         align-content: center;
         flex-wrap: wrap;
         width: 100%;
@@ -4388,11 +4388,6 @@ a.a-lineup-bands:hover {
      .Links-Footer-Kontakt-Spalte-6 {
         padding-left: 31px;
      }
-
-     .Programm-Zeitplan-Row {
-        background-position: center;
-        height: 1700px;
-    }
 
      .slider-card-programm .slider-card-programm-image .slider-programm-img {
         width: 100%;
