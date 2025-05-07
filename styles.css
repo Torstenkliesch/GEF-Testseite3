@@ -1402,7 +1402,7 @@ a.a-program-links:hover {
  } 
 
  .programm-page_img {
-    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.png");
+    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -1418,7 +1418,7 @@ a.a-program-links:hover {
 
 @supports (-webkit-touch-callout: inherit) {
     .programm-page_img {
-        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.png");
+        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.jpg");
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
