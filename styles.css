@@ -1465,7 +1465,7 @@ a.a-program-links:hover {
 .Programm-Zeitplan-Row {
     display: flex;
     flex-direction: column;
-    background-image: url("images/817d1a96-7e60-49b6-8f19-c87c8c0a3ef4.png");
+    background-image: url("images/Lachendes_Maedchen.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1484,7 +1484,7 @@ a.a-program-links:hover {
     .Programm-Zeitplan-Row {
         display: flex;
         flex-direction: column;
-        background-image: url("images/817d1a96-7e60-49b6-8f19-c87c8c0a3ef4.png");
+        background-image: url("images/Lachendes_Maedchen.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
