@@ -752,6 +752,7 @@ transition: 1.5s;
     contrast(115%);
     transition: filter .3s;
     z-index: 0;
+ 
 }
 
 .programm_img:hover {
@@ -1402,7 +1403,7 @@ a.a-program-links:hover {
  } 
 
  .programm-page_img {
-    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.jpg");
+    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.webp");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -1418,7 +1419,7 @@ a.a-program-links:hover {
 
 @supports (-webkit-touch-callout: inherit) {
     .programm-page_img {
-        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.jpg");
+        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.webp");
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
@@ -1465,7 +1466,7 @@ a.a-program-links:hover {
 .Programm-Zeitplan-Row {
     display: flex;
     flex-direction: column;
-    background-image: url("images/audience.png");
+    background-image: url("images/audience.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1484,7 +1485,7 @@ a.a-program-links:hover {
     .Programm-Zeitplan-Row {
         display: flex;
         flex-direction: column;
-        background-image: url("images/audience.png");
+        background-image: url("images/audience.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -2580,10 +2581,6 @@ a.a-lineup-bands:hover {
      padding-top: 45px;
 }
 
-.container-programm {
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-    grid-template-rows: 1fr 1fr; 
-}
 
 .Highlights-Row {
     height: 1100px;
@@ -2616,6 +2613,11 @@ a.a-lineup-bands:hover {
 
 .illu {
     width: 95%;
+}
+
+.container-programm {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-rows: 1fr 1fr; 
 }
   
 .Links-Footer-Kontakt-Spalte-4 {
@@ -2722,7 +2724,7 @@ a.a-lineup-bands:hover {
 }
 
 .Mitmach-card__content {
-    height: 630px;
+    height: 670px;
 }
 
 .Programm-Zeitplan-Row {
