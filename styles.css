@@ -13,6 +13,35 @@
 --swiper-pagination-color: black;
 }
 
+@media all and (max-width: 2600px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 30px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.333rem;
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+    }
+    }
+
+@media all and (max-width: 2300px) {
+    :root {
+        font-family: "Rethink Sans", serif;
+        font-size: 30px;
+    --fs-xxl: 3.157rem;
+    --fs-xl: 2.369rem;
+    --fs-l: 1.777rem;
+    --fs-m: 1.333rem;
+    --fs-normal: 1rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+    }
+    }
+
+
 @media all and (max-width: 2100px) {
     :root {
         font-family: "Rethink Sans", serif;
@@ -812,7 +841,7 @@ transition: 1.5s;
     height: 900px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url("images/Vegan_bw.png");
+    background-image: url("images/Vegan_bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -831,7 +860,7 @@ transition: 1.5s;
     height: 900px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url("images/Vegan_bw.png");
+    background-image: url("images/Vegan_bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -1403,7 +1432,7 @@ a.a-program-links:hover {
  } 
 
  .programm-page_img {
-    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.webp");
+    background-image: url("images/Solarmodul_Aufbau_Gegenlicht.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -1419,7 +1448,7 @@ a.a-program-links:hover {
 
 @supports (-webkit-touch-callout: inherit) {
     .programm-page_img {
-        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.webp");
+        background-image: url("images/Solarmodul_Aufbau_Gegenlicht.jpg");
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
@@ -1466,7 +1495,7 @@ a.a-program-links:hover {
 .Programm-Zeitplan-Row {
     display: flex;
     flex-direction: column;
-    background-image: url("images/audience.webp");
+    background-image: url("images/audience.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1485,7 +1514,7 @@ a.a-program-links:hover {
     .Programm-Zeitplan-Row {
         display: flex;
         flex-direction: column;
-        background-image: url("images/audience.webp");
+        background-image: url("images/audience.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -2251,7 +2280,7 @@ a.a-lineup-bands:hover {
  } 
 
  .vortraege-page_img {
-    background-image: url("images/Fishbowl_neu_big.png");
+    background-image: url("images/Fishbowl_neu_big.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -2267,7 +2296,7 @@ a.a-lineup-bands:hover {
 
 @supports (-webkit-touch-callout: inherit) {
     .vortraege-page_img {
-    background-image: url("images/Fishbowl_neu_big.png");
+    background-image: url("images/Fishbowl_neu_big.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -2552,6 +2581,178 @@ a.a-lineup-bands:hover {
 
  /* Media Queries */
 
+@media all and (max-width: 2580px) {
+
+.container-hero {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.illu {
+    width: 85%;
+    margin-left: 100px;
+ }
+
+.grid-item {
+    margin-top: 220px;   
+    }
+
+.grid-item-1 {
+    margin-top: 220px;   
+}
+ 
+.grid-item-2 {
+     margin-top: 390px;
+}
+ 
+.hero-h2 {
+     margin-bottom: 30px;
+     padding-top: 45px;
+}
+
+
+.container-programm {
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    grid-template-rows: 1fr 1fr; 
+}
+
+#programmImage1{
+            
+            content: url(https://www.good-energy-festival.de/images/Mitmach-Bild-1300.jpg) !important;
+        }
+
+#programmImage2{
+            
+            content: url(https://www.good-energy-festival.de/images/Balkonmodul-Schraubworkshop-1300.jpg) !important;
+        }
+
+#programmImage3{
+            
+            content: url(https://www.good-energy-festival.de/images/Diskussionsrunde-1300px.jpg) !important;
+        }
+
+#programmImage4{
+            
+            content: url(https://www.good-energy-festival.de/images/Radrolle_KLiBA-1300.jpg) !important;
+        }
+
+#programmImage5{
+            
+            content: url(https://www.good-energy-festival.de/images/Film_1300.jpg) !important;
+        }
+
+#programmImage6{
+            
+            content: url(https://www.good-energy-festival.de/images/Foodtruck_neu-1300.jpg) !important;
+        }
+
+
+.Highlights-Row {
+    height: 1100px;
+}
+
+.Anfahrt-Sub-Title {
+    flex-basis: 140px;
+}
+
+.Links-Footer-Kontakt-Spalte-4 {
+    padding-left: 86px;
+}
+
+ .Links-Footer-Kontakt-Spalte-6 {
+    padding-left: 42px;
+}
+
+.Programm-Zeitplan-Row {
+    height: 2000px;
+}
+
+.Mitmach-grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    grid-auto-rows: auto;
+}
+
+.Programm-Familienprogramm-Row {
+    height: 1100px;
+}
+
+#jules{
+            
+            content: url(https://www.good-energy-festival.de/images/JulesderHalbe-1280.jpg) !important;
+        }
+
+#linupbild3{
+            
+            content: url(https://www.good-energy-festival.de/images/Cunz-1280.jpg) !important;
+        }
+
+}
+
+
+
+@media all and (max-width: 2300px) {
+
+.container-hero {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.illu {
+    width: 95%;
+    margin-left: 0px;
+ }
+
+.grid-item {
+    margin-top: 160px;   
+    }
+
+.grid-item-1 {
+    margin-top: 160px;   
+}
+ 
+.grid-item-2 {
+     margin-top: 320px;
+}
+ 
+.hero-h2 {
+     margin-bottom: 30px;
+     padding-top: 45px;
+}
+
+
+.Highlights-Row {
+    height: 1100px;
+}
+
+.Anfahrt-Sub-Title {
+    flex-basis: 140px;
+}
+
+.Links-Footer-Kontakt-Spalte-4 {
+    padding-left: 86px;
+}
+
+ .Links-Footer-Kontakt-Spalte-6 {
+    padding-left: 42px;
+}
+
+.Programm-Zeitplan-Row {
+    height: 2000px;
+}
+
+.Programm-Familienprogramm-Row {
+    height: 1100px;
+}
+
+}
+
+
+
+
+
 @media all and (max-width: 2100px) {
 
 .container-hero {
@@ -2619,6 +2820,37 @@ a.a-lineup-bands:hover {
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     grid-template-rows: 1fr 1fr; 
 }
+
+#programmImage1{
+            
+            content: url(https://www.good-energy-festival.de/images/Mitmach-Bild.jpg) !important;
+        }
+
+#programmImage2{
+            
+            content: url(https://www.good-energy-festival.de/images/Balkonmodul-Schraubworkshop.jpg) !important;
+        }
+
+#programmImage3{
+            
+            content: url(https://www.good-energy-festival.de/images/Diskussionsrunde_1000px.jpg) !important;
+        }
+
+#programmImage4{
+            
+            content: url(https://www.good-energy-festival.de/images/Radrolle_KLiBA.jpg) !important;
+        }
+
+#programmImage5{
+            
+            content: url(https://www.good-energy-festival.de/images/Film_1000px.jpg) !important;
+        }
+
+#programmImage6{
+            
+            content: url(https://www.good-energy-festival.de/images/Foodtruck_1000_neu.jpg) !important;
+        }
+
   
 .Links-Footer-Kontakt-Spalte-4 {
     padding-left: 82px;
@@ -2627,6 +2859,12 @@ a.a-lineup-bands:hover {
  .Links-Footer-Kontakt-Spalte-6 {
     padding-left: 42px;
  }
+
+ .Mitmach-grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-auto-rows: auto;
+}
 
  .slider-card-programm .slider-card-programm-content .slider-card-programm-titlep {
     margin-bottom: 25px;
@@ -2652,7 +2890,18 @@ a.a-lineup-bands:hover {
     padding-top: 40px;
 }
 
+#jules{
+            
+            content: url(https://www.good-energy-festival.de/images/JulesderHalbe.jpg) !important;
+        }
+
+#linupbild3{
+            
+            content: url(https://www.good-energy-festival.de/images/Cunz.jpg) !important;
+        }
+
 }
+
 
 @media all and (max-width: 1980px) {
     .container-hero {
@@ -2728,7 +2977,7 @@ a.a-lineup-bands:hover {
 }
 
 .Programm-Zeitplan-Row {
-    height: 1800px;
+    height: 1900px;
 }
 
 }
@@ -3346,7 +3595,7 @@ a.a-lineup-bands:hover {
 } 
 
 .programm-page_img {
-    background-image: url("images/SolarmodulAufbauGegenlicht-1300.png");
+    background-image: url("images/SolarmodulAufbauGegenlicht-1300.jpg");
     aspect-ratio: 1 / 2.6;
     object-fit: cover;
     height: 100vh;
@@ -3730,7 +3979,7 @@ a.a-lineup-bands:hover {
          }
 
          .Mitmach-card__content {
-            height: 400px;
+            height: 430px;
         }
         
         .brunch-img {
@@ -4078,8 +4327,13 @@ a.a-lineup-bands:hover {
     
         #myImage{
             /*content: url(http://127.0.0.1:3000/images/Der-Lorax-800px.jpg) !important;*/
-            content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800px.jpg) !important;
+            /*content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800px.jpg) !important;*/
+            content: url(https://www.good-energy-festival.de/images/Der-Lorax-800px.jpg) !important;
         }
+
+         .Mitmach-card__content {
+        height: 460px;
+    }
 
         .container-film {
             grid-template-columns: repeat(2, 1fr);
@@ -4416,9 +4670,12 @@ a.a-lineup-bands:hover {
     }
 
     .Mitmach-card__content {
-        height: 540px;
+        height: 570px;
     }
     
+    #zummobil {
+        height: 590px;
+    }
     .Mitmach-card__subtitle {
         display: flex;
         flex-direction: column;
@@ -4503,7 +4760,7 @@ a.a-lineup-bands:hover {
         }
 
         .Mitmach-card__content {
-            height: 550px;
+            height: 570px;
         }
 
         #zummobil {
@@ -4517,6 +4774,14 @@ a.a-lineup-bands:hover {
     .illu {
         width: 92%;
      }
+
+    .Mitmach-card__content {
+            height: 590px;
+        }
+
+        #zummobil {
+            height: 620px;
+        }
 
      .uber-uns-logo-container {
         width: 30%;
@@ -4600,7 +4865,8 @@ a.a-lineup-bands:hover {
         }
 
         #myImage{
-            content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800spx.jpg) !important;
+            content: url(https://www.good-energy-festival.de/images/Der-Lorax-800spx.jpg) !important;
+           /* content: url(https://torstenkliesch.github.io/GEF-Testseite3/images/Der-Lorax-800spx.jpg) !important;*/
             /*content: url(http://127.0.0.1:3000/images/Der-Lorax-800spx.jpg) !important;*/
         }
         .film-poster {
